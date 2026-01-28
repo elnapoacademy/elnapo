@@ -31,3 +31,30 @@ nav a {
   padding:20px;
   border:1px solid gold;
 }
+.page {
+  padding: 80px 120px;
+}
+
+.page h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #222;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: gold;
+  transform: translateY(-5px);
+}
