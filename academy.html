@@ -1,23 +1,99 @@
 <!DOCTYPE html>
-<html lang="uk"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Академія</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/elnapo/assets/css/style.css"
-</head><body>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Академія | ELNAPO Academy</title>
 
-<header>
-<div class="logo">ELNAPO ACADEMY</div>
-<nav>
-<a href="index.html">Головна</a>
-<a href="academy.html">Академія</a>
-<a href="team.html">Склад</a>
-<a href="esea.html">ESEA</a>
-<a href="achievements.html">Досягнення</a>
-</nav>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/elnapo/assets/css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">ELNAPO</div>
+
+    <nav>
+      <a href="/elnapo/">Головна</a>
+      <a href="team.html">Основний склад</a>
+      <a href="academy.html" class="active">Академія</a>
+      <a href="esea.html">ESEA</a>
+      <a href="achievements.html">Досягнення</a>
+    </nav>
+  </div>
 </header>
 
-<section><h1>Академія</h1><div class='cards'><div class='card'>Тренування</div><div class='card'>Аналітика</div></div></section>
-<footer>© ELNAPO ACADEMY</footer>
-</body></html>
+<main>
+
+  <!-- PAGE HEADER -->
+  <section class="page-hero">
+    <h1>Академія ELNAPO</h1>
+    <p>Розвиток молодих талантів та шлях до професійної сцени</p>
+  </section>
+
+  <!-- ACADEMY ROSTER -->
+  <section class="academy-roster container">
+    <h2>Склад академії</h2>
+
+    <div class="academy-grid">
+      <div class="player-card">
+        <img src="assets/img/player1.jpg" alt="Player">
+        <h3>PlayerOne</h3>
+        <span>Rifler</span>
+        <p>16 років • Україна</p>
+      </div>
+
+      <div class="player-card">
+        <img src="assets/img/player2.jpg" alt="Player">
+        <h3>PlayerTwo</h3>
+        <span>AWP</span>
+        <p>17 років • Україна</p>
+      </div>
+
+      <div class="player-card">
+        <img src="assets/img/player3.jpg" alt="Player">
+        <h3>PlayerThree</h3>
+        <span>IGL</span>
+        <p>18 років • Україна</p>
+      </div>
+
+      <div class="player-card">
+        <img src="assets/img/player4.jpg" alt="Player">
+        <h3>PlayerFour</h3>
+        <span>Support</span>
+        <p>16 років • Україна</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMY INFO -->
+  <section class="academy-info">
+    <div class="container">
+      <h2>Як працює академія</h2>
+      <p>
+        Гравці академії проходять регулярні тренування,
+        індивідуальний розвиток, роботу з комунікацією
+        та підготовку до офіційних матчів і турнірів.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Хочеш потрапити в академію?</h2>
+    <a href="#" class="btn">Подати заявку</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 ELNAPO Academy</p>
+</footer>
+
+</body>
+</html>
