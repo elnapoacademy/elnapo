@@ -1,1 +1,0 @@
-console.log('Elnapo Academy loaded');
