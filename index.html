@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>ELNAPO ACADEMY</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -18,43 +15,37 @@
   <div class="nav-container">
     <div class="logo">ELNAPO</div>
     <nav>
-      <a href="#about">Про академію</a>
-      <a href="#team">Склад команди</a>
-      <a href="#academy">Склад академії</a>
-      <a href="#staff">Керівництво</a>
-      <a href="#achievements">Досягнення</a>
-      <a href="#esea">ESEA</a>
-      <a href="#contacts">Контакти</a>
-      <a href="#news">Новини</a>
+      <a href="index.html">Головна</a>
+      <a href="team.html">Склад команди</a>
+      <a href="academy.html">Склад академії</a>
+      <a href="staff.html">Керівництво</a>
+      <a href="achievements.html">Досягнення</a>
+      <a href="esea.html">ESEA</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
     </nav>
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <!-- Видео-фон (можешь заменить файл) -->
   <video class="hero-video" autoplay muted loop playsinline>
     <source src="assets/video/hero.mp4" type="video/mp4">
   </video>
 
-  <!-- Затемнение -->
   <div class="hero-overlay"></div>
-
-  <!-- Watermark -->
   <div class="hero-watermark">ELNAPO ACADEMY</div>
 
-  <!-- Контент -->
   <div class="hero-content">
     <h1>ELNAPO ACADEMY</h1>
     <p>Формуємо нове покоління кіберспортсменів</p>
   </div>
 
-  <!-- Частицы -->
   <canvas id="particles"></canvas>
 </section>
 
 <!-- ================= ABOUT ================= -->
-<section id="about" class="section">
+<section class="section about">
   <h2>Про академію</h2>
   <p>
     Тут буде текст про академію.  
@@ -62,14 +53,26 @@
   </p>
 </section>
 
-<!-- ================= ДАЛЕЕ ПОКА ЗАГЛУШКИ ================= -->
-<section id="team" class="section"><h2>Склад команди</h2></section>
-<section id="academy" class="section"><h2>Склад академії</h2></section>
-<section id="staff" class="section"><h2>Керівництво</h2></section>
-<section id="achievements" class="section"><h2>Досягнення</h2></section>
-<section id="esea" class="section"><h2>ESEA</h2></section>
-<section id="contacts" class="section"><h2>Зв'язок з нами</h2></section>
-<section id="news" class="section"><h2>Новини</h2></section>
+<!-- ================= SPONSORS ================= -->
+<section class="section sponsors">
+  <h2>Наші партнери</h2>
+
+  <div class="sponsor-marquee">
+    <div class="sponsor-track">
+      <!-- Пример -->
+      <a href="#" target="_blank">
+        <img src="assets/img/sponsor.png" alt="Sponsor">
+      </a>
+      <a href="#" target="_blank">
+        <img src="assets/img/sponsor.png" alt="Sponsor">
+      </a>
+      <a href="#" target="_blank">
+        <img src="assets/img/sponsor.png" alt="Sponsor">
+      </a>
+      <!-- просто копируешь блок -->
+    </div>
+  </div>
+</section>
 
 <footer class="footer">
   © ELNAPO ACADEMY
