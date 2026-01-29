@@ -199,43 +199,6 @@ nav a:hover {
   margin-top: 10px;
 }
 
-/* ================= TEAM GRID ================= */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-
-.player-card {
-  background: #0c0c0c;
-  border-radius: 18px;
-  overflow: hidden;
-  text-align: center;
-  transition: 0.4s;
-}
-
-.player-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.player-card:hover {
-  transform: translateY(-10px);
-}
-
-.player-info {
-  padding: 20px;
-}
-
-.player-info h3 {
-  font-size: 18px;
-}
-
-.player-info span {
-  opacity: 0.6;
-}
-
 /* ================= PLAYER PAGE ================= */
 .player-profile {
   display: grid;
