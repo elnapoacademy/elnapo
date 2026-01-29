@@ -2,119 +2,79 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ELNAPO Academy</title>
+  <title>ELNAPO ACADEMY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/elnapo/assets/css/style.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
-  <div class="container nav">
+  <div class="nav-container">
     <div class="logo">ELNAPO</div>
-
     <nav>
-      <a href="/elnapo/">Головна</a>
-      <a href="team.html">Основний склад</a>
-      <a href="academy.html">Академія</a>
-      <a href="esea.html">ESEA</a>
-      <a href="achievements.html">Досягнення</a>
+      <a href="#about">Про академію</a>
+      <a href="#team">Склад команди</a>
+      <a href="#academy">Склад академії</a>
+      <a href="#staff">Керівництво</a>
+      <a href="#achievements">Досягнення</a>
+      <a href="#esea">ESEA</a>
+      <a href="#contacts">Контакти</a>
+      <a href="#news">Новини</a>
     </nav>
   </div>
 </header>
 
-<main>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <!-- Видео-фон (можешь заменить файл) -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="assets/video/hero.mp4" type="video/mp4">
+  </video>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>ELNAPO ACADEMY</h1>
-      <p>Формуємо нове покоління кіберспортсменів</p>
+  <!-- Затемнение -->
+  <div class="hero-overlay"></div>
 
-      <div class="hero-buttons">
-        <a href="academy.html" class="btn">Склад академії</a>
-        <a href="team.html" class="btn outline">Основний склад</a>
-      </div>
-    </div>
-  </section>
+  <!-- Watermark -->
+  <div class="hero-watermark">ELNAPO ACADEMY</div>
 
-  <!-- ABOUT -->
-  <section class="about container">
-    <h2>Про академію</h2>
-    <p>
-      ELNAPO Academy — це кіберспортивна академія,
-      створена для розвитку молодих талантів та
-      підготовки професійних гравців до змагань
-      на міжнародному рівні.
-    </p>
-  </section>
+  <!-- Контент -->
+  <div class="hero-content">
+    <h1>ELNAPO ACADEMY</h1>
+    <p>Формуємо нове покоління кіберспортсменів</p>
+  </div>
 
-  <!-- DIRECTIONS -->
-  <section class="directions container">
-    <div class="direction-card">
-      <h3>🎮 Основний склад</h3>
-      <p>Представляє академію на офіційних турнірах</p>
-    </div>
+  <!-- Частицы -->
+  <canvas id="particles"></canvas>
+</section>
 
-    <div class="direction-card">
-      <h3>🧠 Академія</h3>
-      <p>Навчання, тренування та шлях до професійної сцени</p>
-    </div>
-  </section>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <h2>Про академію</h2>
+  <p>
+    Тут буде текст про академію.  
+    Ти зможеш замінити його на будь-який свій.
+  </p>
+</section>
 
-  <!-- ACADEMY ROSTER PREVIEW -->
-  <section class="academy-preview">
-    <h2>Склад академії</h2>
-    <p class="section-subtitle">
-      Молоді гравці, що проходять шлях розвитку
-    </p>
-
-    <div class="academy-grid">
-      <div class="player-card">
-        <img src="assets/img/player1.jpg" alt="Player">
-        <h3>PlayerOne</h3>
-        <span>Rifler</span>
-      </div>
-
-      <div class="player-card">
-        <img src="assets/img/player2.jpg" alt="Player">
-        <h3>PlayerTwo</h3>
-        <span>AWP</span>
-      </div>
-
-      <div class="player-card">
-        <img src="assets/img/player3.jpg" alt="Player">
-        <h3>PlayerThree</h3>
-        <span>IGL</span>
-      </div>
-    </div>
-
-    <a href="academy.html" class="btn outline">Повний склад</a>
-  </section>
-
-  <!-- ACHIEVEMENTS -->
-  <section class="mini-achievements">
-    <h2>Досягнення</h2>
-    <p>Перші перемоги та стабільний прогрес</p>
-    <a href="achievements.html" class="btn">Переглянути</a>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Готовий стати частиною ELNAPO Academy?</h2>
-    <a href="#" class="btn">Звʼязатися з нами</a>
-  </section>
-
-</main>
+<!-- ================= ДАЛЕЕ ПОКА ЗАГЛУШКИ ================= -->
+<section id="team" class="section"><h2>Склад команди</h2></section>
+<section id="academy" class="section"><h2>Склад академії</h2></section>
+<section id="staff" class="section"><h2>Керівництво</h2></section>
+<section id="achievements" class="section"><h2>Досягнення</h2></section>
+<section id="esea" class="section"><h2>ESEA</h2></section>
+<section id="contacts" class="section"><h2>Зв'язок з нами</h2></section>
+<section id="news" class="section"><h2>Новини</h2></section>
 
 <footer class="footer">
-  <p>© 2026 ELNAPO Academy</p>
+  © ELNAPO ACADEMY
 </footer>
 
+<script src="assets/js/particles.js"></script>
 </body>
 </html>
