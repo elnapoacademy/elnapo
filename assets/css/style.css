@@ -465,3 +465,74 @@ nav a.active {
 .social-card:active {
   transform: scale(0.97);
 }
+
+/* ================= ESEA ================= */
+.esea-seasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.esea-season-card {
+  background: #0b0b0b;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.esea-season-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(212,175,55,0.2);
+  color: #d4af37;
+}
+
+/* ===== MATCHES ===== */
+.matches-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.match-card {
+  background: #0b0b0b;
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.match-card:hover {
+  transform: scale(1.02);
+}
+
+.match-card span {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.match-result {
+  font-size: 20px;
+  font-weight: 800;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.match-result.win {
+  background: #1f8f3a;
+}
+
+.match-result.loss {
+  background: #8f1f1f;
+}
