@@ -151,3 +151,36 @@ nav a:hover {
     display: none;
   }
 }
+
+.about p {
+  max-width: 800px;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.sponsor-marquee {
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.sponsor-track {
+  display: flex;
+  gap: 60px;
+  animation: scroll 25s linear infinite;
+}
+
+.sponsor-track img {
+  height: 60px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.sponsor-track img:hover {
+  opacity: 1;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
