@@ -274,3 +274,52 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* ================= STAFF ================= */
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.staff-card {
+  background: #0b0b0b;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.staff-card:hover {
+  transform: translateY(-10px);
+}
+
+.staff-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.staff-info {
+  padding: 24px;
+}
+
+.staff-info h3 {
+  font-size: 20px;
+}
+
+.staff-info span {
+  display: block;
+  margin-top: 6px;
+  color: #d4af37;
+  font-size: 14px;
+}
+
+.staff-info p {
+  margin-top: 14px;
+  font-size: 15px;
+  opacity: 0.75;
+}
+
+/* ================= ACTIVE NAV ================= */
+nav a.active {
+  color: #d4af37;
+}
