@@ -184,3 +184,93 @@ nav a:hover {
   to { transform: translateX(-50%); }
 }
 
+/* ================= PAGE HERO ================= */
+.page-hero {
+  padding: 140px 20px 80px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 48px;
+}
+
+.page-hero p {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* ================= TEAM GRID ================= */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.player-card {
+  background: #0c0c0c;
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.player-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.player-card:hover {
+  transform: translateY(-10px);
+}
+
+.player-info {
+  padding: 20px;
+}
+
+.player-info h3 {
+  font-size: 18px;
+}
+
+.player-info span {
+  opacity: 0.6;
+}
+
+/* ================= PLAYER PAGE ================= */
+.player-profile {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.player-profile img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.player-details h1 {
+  font-size: 36px;
+}
+
+.player-details h2 {
+  font-size: 20px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.faceit-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 26px;
+  border-radius: 30px;
+  background: #d4af37;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.faceit-btn:hover {
+  transform: scale(1.05);
+}
+
