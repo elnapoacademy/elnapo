@@ -454,3 +454,14 @@ nav a.active {
   font-size: 16px;
 }
 
+.social-card {
+  cursor: pointer;
+}
+
+.social-card:hover h3 {
+  color: #d4af37;
+}
+
+.social-card:active {
+  transform: scale(0.97);
+}
