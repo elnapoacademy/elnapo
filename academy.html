@@ -1,98 +1,90 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Академія | ELNAPO Academy</title>
+  <meta charset="UTF-8">
+  <title>Склад академії | ELNAPO ACADEMY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/elnapo/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
-  <div class="container nav">
+  <div class="nav-container">
     <div class="logo">ELNAPO</div>
-
     <nav>
-      <a href="/elnapo/">Головна</a>
-      <a href="team.html">Основний склад</a>
-      <a href="academy.html" class="active">Академія</a>
-      <a href="esea.html">ESEA</a>
+      <a href="index.html">Головна</a>
+      <a href="team.html">Склад команди</a>
+      <a href="academy.html" class="active">Склад академії</a>
+      <a href="staff.html">Керівництво</a>
       <a href="achievements.html">Досягнення</a>
+      <a href="esea.html">ESEA</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
     </nav>
   </div>
 </header>
 
-<main>
+<!-- ================= HERO ================= -->
+<section class="page-hero">
+  <h1>Склад академії</h1>
+  <p>Майбутнє ELNAPO. Розвиток, дисципліна та ріст</p>
+</section>
 
-  <!-- PAGE HEADER -->
-  <section class="page-hero">
-    <h1>Академія ELNAPO</h1>
-    <p>Розвиток молодих талантів та шлях до професійної сцени</p>
-  </section>
+<!-- ================= ACADEMY ROSTER ================= -->
+<section class="section">
+  <div class="team-grid">
 
-  <!-- ACADEMY ROSTER -->
-  <section class="academy-roster container">
-    <h2>Склад академії</h2>
+    <!-- PLAYER -->
+    <a href="players/academy-player1.html" class="player-card">
+      <img src="assets/img/academy/player1.jpg" alt="Player">
+      <h3>Імʼя Прізвище</h3>
+      <span>nickname</span>
+      <div class="faceit-link">Faceit</div>
+    </a>
 
-    <div class="academy-grid">
-      <div class="player-card">
-        <img src="assets/img/player1.jpg" alt="Player">
-        <h3>PlayerOne</h3>
-        <span>Rifler</span>
-        <p>16 років • Україна</p>
-      </div>
+    <a href="players/academy-player2.html" class="player-card">
+      <img src="assets/img/academy/player2.jpg" alt="Player">
+      <h3>Імʼя Прізвище</h3>
+      <span>nickname</span>
+      <div class="faceit-link">Faceit</div>
+    </a>
 
-      <div class="player-card">
-        <img src="assets/img/player2.jpg" alt="Player">
-        <h3>PlayerTwo</h3>
-        <span>AWP</span>
-        <p>17 років • Україна</p>
-      </div>
+    <a href="players/academy-player3.html" class="player-card">
+      <img src="assets/img/academy/player3.jpg" alt="Player">
+      <h3>Імʼя Прізвище</h3>
+      <span>nickname</span>
+      <div class="faceit-link">Faceit</div>
+    </a>
 
-      <div class="player-card">
-        <img src="assets/img/player3.jpg" alt="Player">
-        <h3>PlayerThree</h3>
-        <span>IGL</span>
-        <p>18 років • Україна</p>
-      </div>
+    <a href="players/academy-player4.html" class="player-card">
+      <img src="assets/img/academy/player4.jpg" alt="Player">
+      <h3>Імʼя Прізвище</h3>
+      <span>nickname</span>
+      <div class="faceit-link">Faceit</div>
+    </a>
 
-      <div class="player-card">
-        <img src="assets/img/player4.jpg" alt="Player">
-        <h3>PlayerFour</h3>
-        <span>Support</span>
-        <p>16 років • Україна</p>
-      </div>
-    </div>
-  </section>
+    <a href="players/academy-player5.html" class="player-card">
+      <img src="assets/img/academy/player5.jpg" alt="Player">
+      <h3>Імʼя Прізвище</h3>
+      <span>nickname</span>
+      <div class="faceit-link">Faceit</div>
+    </a>
 
-  <!-- ACADEMY INFO -->
-  <section class="academy-info">
-    <div class="container">
-      <h2>Як працює академія</h2>
-      <p>
-        Гравці академії проходять регулярні тренування,
-        індивідуальний розвиток, роботу з комунікацією
-        та підготовку до офіційних матчів і турнірів.
-      </p>
-    </div>
-  </section>
+    <a href="players/academy-player6.html" class="player-card">
+      <img src="assets/img/academy/player6.jpg" alt="Player">
+      <h3>Імʼя Прізвище</h3>
+      <span>nickname</span>
+      <div class="faceit-link">Faceit</div>
+    </a>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Хочеш потрапити в академію?</h2>
-    <a href="#" class="btn">Подати заявку</a>
-  </section>
-
-</main>
+  </div>
+</section>
 
 <footer class="footer">
-  <p>© 2026 ELNAPO Academy</p>
+  © ELNAPO ACADEMY
 </footer>
 
 </body>
