@@ -586,3 +586,97 @@ nav a.active {
   color: #ccc;
   line-height: 1.5;
 }
+
+/* =========================
+   MOBILE ADAPTATION
+========================= */
+
+@media (max-width: 768px) {
+
+  /* ===== Global ===== */
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 60px 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  /* ===== Header ===== */
+  .header-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    padding: 120px 16px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* ===== Grids ===== */
+  .team-grid,
+  .academy-grid,
+  .management-grid,
+  .news-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== Cards ===== */
+  .player-card,
+  .news-card,
+  .achievement-card,
+  .management-card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  /* ===== ESEA ===== */
+  .esea-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .esea-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    font-size: 13px;
+    padding: 24px 12px;
+  }
+}
