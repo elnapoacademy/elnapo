@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
+  <script>
+function copyCrosshair() {
+  const el = document.getElementById('crosshair');
+  navigator.clipboard.writeText(el.innerText);
+  el.innerText = 'Скопійовано!';
+  setTimeout(() => el.innerText = 'CSGO-XXXX-XXXX', 1500);
+}
+</script>
+
 <body>
 
 <header class="header">
