@@ -2,10 +2,10 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Гравець | ELNAPO ACADEMY</title>
+  <title>PokSSA333 | ELNAPO Academy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,38 +16,71 @@
     <nav>
       <a href="index.html">Головна</a>
       <a href="team.html">Склад команди</a>
-      <a href="academy.html">Склад академії</a>
-      <a href="staff.html">Керівництво</a>
-      <a href="achievements.html">Досягнення</a>
-      <a href="esea.html">ESEA</a>
-      <a href="news.html">Новини</a>
-      <a href="contacts.html">Контакти</a>
     </nav>
   </div>
 </header>
 
-<section class="section player-page">
-  <div class="player-profile">
+<section class="player-page">
+
+  <!-- MAIN CARD -->
+  <div class="player-card-big">
+
     <img src="assets/img/players/player1.jpg" alt="Player">
 
-    <div class="player-details">
+    <div class="player-main-info">
       <h1>Артем Нишпал</h1>
       <h2>PokSSA333</h2>
 
-      <p>
-        Rifler, MAX Elo 3459, 16y.o, 5000 hours
+      <div class="player-meta">
+        <span>Роль: Rifler</span>
+        <span>ELO: 2300</span>
+      </div>
+
+      <p class="player-bio">
+        Коротка біографія гравця. Стиль гри, сильні сторони, досвід.
       </p>
 
-      <a href="https://www.faceit.com/ru/players/PokSSA333" target="_blank" class="faceit-btn">
-        Faceit профіль
-      </a>
+      <div class="player-socials">
+        <a href="https://www.faceit.com/" target="_blank" class="social faceit">FACEIT</a>
+        <a href="https://www.hltv.org/" target="_blank" class="social hltv">HLTV</a>
+        <a href="https://www.instagram.com/" target="_blank" class="social instagram">INSTAGRAM</a>
+      </div>
+
     </div>
   </div>
+
+  <!-- SETUP -->
+  <div class="player-setup-grid">
+
+    <div class="setup-item"><span>DPI</span><strong>800</strong></div>
+    <div class="setup-item"><span>Sens</span><strong>1.25</strong></div>
+
+    <div class="setup-item copy" id="crosshair">
+      <span>Код прицілу</span>
+      <strong>CSGO-XXXX-XXXX</strong>
+    </div>
+
+    <div class="setup-item"><span>Мишка</span><strong>Logitech G Pro X</strong></div>
+    <div class="setup-item"><span>Клавіатура</span><strong>HyperX Alloy</strong></div>
+    <div class="setup-item"><span>Навушники</span><strong>SteelSeries Arctis</strong></div>
+    <div class="setup-item"><span>Монітор</span><strong>Zowie XL2546K</strong></div>
+
+  </div>
+
 </section>
 
 <footer class="footer">
   © ELNAPO ACADEMY
 </footer>
+
+<script>
+  const crosshair = document.getElementById('crosshair');
+  crosshair.addEventListener('click', () => {
+    navigator.clipboard.writeText('CSGO-XXXX-XXXX');
+    crosshair.classList.add('copied');
+    setTimeout(() => crosshair.classList.remove('copied'), 1200);
+  });
+</script>
 
 </body>
 </html>
