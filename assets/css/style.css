@@ -738,4 +738,24 @@ nav a.active {
   transform: scale(1.1);
   box-shadow: 0 0 14px rgba(212,175,55,0.4);
 }
+/* === PLAYER SOCIAL ICON FIX === */
+.player-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.player-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-links img {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  object-fit: contain;
+}
 
