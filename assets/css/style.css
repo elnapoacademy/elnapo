@@ -785,3 +785,56 @@ nav a.active {
 .stat-box.copy {
   cursor: pointer;
 }
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .player-card-advanced {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .player-left img {
+    max-width: 260px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .player-right {
+    text-align: center;
+  }
+
+  .player-socials {
+    justify-content: center;
+  }
+
+  .player-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-grid,
+  .team-grid,
+  .academy-grid,
+  .staff-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
