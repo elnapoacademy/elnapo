@@ -2,87 +2,82 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>PokSSA333 | ELNAPO Academy</title>
+  <title>Гравець | ELNAPO Academy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="favicon.png" type="image/png">
-<link rel="shortcut icon" href="favicon.png">
- 
-
-
+  <link rel="stylesheet" href="assets/css/style.css?v=2026">
 </head>
 <body>
 
 <header class="header">
-  <div class="nav-container">
+  <div class="container header-inner">
     <div class="logo">ELNAPO</div>
-    <nav>
+    <nav class="nav">
       <a href="index.html">Головна</a>
       <a href="team.html">Склад команди</a>
+      <a href="academy.html">Склад академії</a>
+      <a href="staff.html">Керівництво</a>
+      <a href="achievements.html">Досягнення</a>
+      <a href="esea.html">ESEA</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
     </nav>
   </div>
 </header>
 
 <section class="player-page">
+  <div class="container player-card-advanced">
 
-  <!-- MAIN CARD -->
-  <div class="player-card-big">
-
-    <img src="assets/img/players/player1.jpg" alt="Player">
-
-    <div class="player-main-info">
-      <h1>Артем Нишпал</h1>
-      <h2>PokSSA333</h2>
-
-      <div class="player-meta">
-        <span>Роль: Starplayer</span>
-        <span>ELO: 3255</span>
-      </div>
-
-      <p class="player-bio">
-        16y.o
-      </p>
-
-      <div class="player-socials"> 
-        <a href="https://www.faceit.com/ru/players/PokSSA333" target="_blank" class="social faceit">FACEIT</a> 
-        <a href="https://www.hltv.org/" target="_blank" class="social hltv">HLTV</a> 
-        <a href="https://www.instagram.com/artem.nyshpal?igsh=MXY4b3R3YnQxc2g3NQ==" target="_blank" class="social instagram">INSTAGRAM</a> 
-      </div>
-  </div>
-
-  <!-- SETUP -->
-  <div class="player-setup-grid">
-
-    <div class="setup-item"><span>DPI</span><strong>800</strong></div>
-    <div class="setup-item"><span>Sens</span><strong>1.20</strong></div>
-
-    <div class="setup-item copy" id="crosshair">
-      <span>Код прицілу</span>
-      <strong>CSGO-8nb3d-Et6WE-QsF6B-V3E7j-WphrM</strong>
+    <!-- ЛЕВАЯ ЧАСТЬ -->
+    <div class="player-left">
+      <img src="assets/img/players/player1.jpg" alt="Player photo">
     </div>
 
-    <div class="setup-item"><span>Мишка</span><strong>Razer Cobra HyperSpeed</strong></div>
-    <div class="setup-item"><span>Клавіатура</span><strong>HyperX Alloy</strong></div>
-    <div class="setup-item"><span>Навушники</span><strong>SteelSeries Arctis</strong></div>
-    <div class="setup-item"><span>Монітор</span><strong>Samsung Odyssey G5 240Гц</strong></div>
+    <!-- ПРАВАЯ ЧАСТЬ -->
+    <div class="player-right">
+      <h2>Ім’я Прізвище</h2>
+      <h3 class="nickname">nickname</h3>
+      <p class="role">Роль: Rifler</p>
+      <p class="elo">ELO: 2500</p>
+
+      <!-- СОЦСЕТИ -->
+      <div class="player-socials">
+        <a href="https://www.faceit.com" target="_blank">
+          <img src="assets/img/icons/faceit.png" alt="Faceit">
+        </a>
+        <a href="https://www.hltv.org" target="_blank">
+          <img src="assets/img/icons/hltv.png" alt="HLTV">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="assets/img/icons/instagram.png" alt="Instagram">
+        </a>
+      </div>
+
+      <!-- СТАТЫ -->
+      <div class="player-stats">
+        <div class="stat-box"><strong>DPI</strong><span>400</span></div>
+        <div class="stat-box"><strong>Sens</strong><span>2.1</span></div>
+
+        <div class="stat-box copy" onclick="copyText('cl_crosshairsize 3')">
+          <strong>Приціл</strong>
+          <span>Скопіювати</span>
+        </div>
+
+        <div class="stat-box"><strong>Мишка</strong><span>Logitech G Pro</span></div>
+        <div class="stat-box"><strong>Клавіатура</strong><span>SteelSeries</span></div>
+        <div class="stat-box"><strong>Навушники</strong><span>HyperX</span></div>
+        <div class="stat-box"><strong>Монітор</strong><span>Zowie 240Hz</span></div>
+      </div>
+    </div>
 
   </div>
-
 </section>
 
-<footer class="footer">
-  © ELNAPO ACADEMY
-</footer>
-
 <script>
-  const crosshair = document.getElementById('crosshair');
-  crosshair.addEventListener('click', () => {
-    navigator.clipboard.writeText('CSGO-8nb3d-Et6WE-QsF6B-V3E7j-WphrM');
-    crosshair.classList.add('copied');
-    setTimeout(() => crosshair.classList.remove('copied'), 1200);
-  });
+function copyText(text) {
+  navigator.clipboard.writeText(text);
+  alert("Код прицілу скопійовано!");
+}
 </script>
 
 </body>
