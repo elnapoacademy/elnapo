@@ -736,6 +736,7 @@ nav a.active {
 
 
   nav {
+    z-index: 2000;
     position: fixed;
     top: 90px;
     left: 0;
