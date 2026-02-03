@@ -747,13 +747,13 @@ nav a.active {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    transform: translateY(-120%);
+    transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 2000;
   }
 
   nav.active {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   nav a {
