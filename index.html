@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>ELNAPO ACADEMY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ELNAPO Academy — українська кіберспортивна академія CS2. Команди, академія, ESEA, новини та розвиток молодих гравців.">
+<meta name="keywords" content="ELNAPO Academy, elnapo, ельнапо академия, кіберспорт україна, CS2 академія">
+<meta name="author" content="ELNAPO Academy">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+<link rel="shortcut icon" href="favicon.png">
+
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="nav-container">
+    <div class="logo">ELNAPO</div>
+    <button class="burger" id="burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="team.html">Склад команди</a>
+      <a href="academy.html">Склад академії</a>
+      <a href="staff.html">Керівництво</a>
+      <a href="achievements.html">Досягнення</a>
+      <a href="esea.html">ESEA</a>
+      <a href="news.html">Новини</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="assets/video/hero.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+  <div class="hero-watermark">ELNAPO ACADEMY</div>
+
+  <div class="hero-content">
+    <h1>ELNAPO ACADEMY</h1>
+    <p>Формуємо нове покоління кіберспортсменів</p>
+  </div>
+
+  <canvas id="particles"></canvas>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section about">
+  <h2>Про академію</h2>
+  <p>
+    Ласкаво просимо до Elnapo Academy!
+ElNapo Academy — це сучасна кіберспортивна академія, де поєднуються професійний розвиток, командна робота та інноваційні технології. Ми допомагаємо молоді розкрити свій потенціал у світі кіберспорту, надаючи доступ до професійних тренувань, турнірів та менторської підтримки.
+У нашій академії кожен учасник отримує:
+Професійні тренування з провідними тренерами;
+Командну взаємодію та розвиток комунікаційних навичок;
+Доступ до турнірів на локальному та міжнародному рівні;
+Підтримку в особистісному розвитку та стратегіях успіху.
+Ми віримо, що кіберспорт — це не лише гра, а платформа для розвитку дисципліни, стратегічного мислення та лідерських якостей. Приєднуйтесь до ElNapo Youth і станьте частиною команди, яка формує майбутнє кіберспорту в Україні!
+ElNapo Academy — граємо, розвиваємось, перемагаємо!
+  </p>
+</section>
+
+<!-- ================= SPONSORS ================= -->
+<section class="section sponsors">
+  <h2>Наші партнери</h2>
+
+  <div class="sponsor-marquee">
+    <div class="sponsor-track">
+      <!-- Пример -->
+      <a href="#" target="_blank">
+        <img src="assets/img/sponsor.png" alt="Sponsor">
+      </a>
+      <a href="#" target="_blank">
+        <img src="assets/img/sponsor.png" alt="Sponsor">
+      </a>
+      <a href="#" target="_blank">
+        <img src="assets/img/sponsor.png" alt="Sponsor">
+      </a>
+      <!-- просто копируешь блок -->
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  © ELNAPO ACADEMY
+</footer>
+
+<script src="assets/js/particles.js"></script>
+ <script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
