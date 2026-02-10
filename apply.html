@@ -6,35 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <meta name="description" content="Подати заявку до ELNAPO Academy. Українська кіберспортивна академія CS2.">
+  <meta name="description" content="Подати заявку до ELNAPO Academy — українська кіберспортивна академія CS2.">
   <meta name="robots" content="index, follow">
 
-  <!-- Security -->
+  <!-- Security (БЕЗ iframe-блокировок) -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="apply.css">
 
+  <!-- MAIN SITE STYLES -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<!-- HEADER — СКОПИРОВАН ИЗ INDEX.HTML -->
 <header class="header">
   <div class="nav-container">
     <div class="logo">ELNAPO</div>
-    
-
     <nav>
       <a href="index.html">Головна</a>
       <a href="team.html">Склад команди</a>
       <a href="academy.html">Склад академії</a>
       <a href="staff.html">Керівництво</a>
       <a href="achievements.html">Досягнення</a>
-      <a href="esea.html">ESEA</a>
       <a href="news.html">Новини</a>
       <a href="contacts.html">Контакти</a>
-     <a href="apply.html">Подати заявку</a>
+      <a href="apply.html" class="active">Подати заявку</a>
     </nav>
   </div>
 </header>
@@ -42,8 +41,8 @@
 <main class="apply-page">
   <h1>Подати заявку до ELNAPO Academy</h1>
   <p class="subtitle">
-    Якщо ти мотивований, дисциплінований і готовий рости — заповни форму нижче.
-    Ми розглядаємо кожну заявку.
+    Якщо ти мотивований, дисциплінований і готовий розвиватися — заповни форму нижче.
+    Ми уважно переглядаємо кожну заявку.
   </p>
 
   <form
@@ -53,61 +52,46 @@
     target="hidden_iframe"
   >
 
-    <!-- Имя -->
     <input type="text" name="entry.1052240686" placeholder="Імʼя та прізвище" required>
-
-    <!-- ELO -->
     <input type="number" name="entry.1741441292" placeholder="FACEIT ELO" required>
 
-    <!-- EXP -->
     <textarea name="entry.895812829" placeholder="Досвід у командах" required></textarea>
-
-    <!-- Prime time -->
     <input type="text" name="entry.1953225601" placeholder="Prime time (час для тренувань)" required>
-
-    <!-- Цели -->
     <textarea name="entry.340256935" placeholder="Цілі в команді" required></textarea>
 
-    <!-- Роль -->
     <select name="entry.49107904" required>
-  <option value="">Роль</option>
-  <option value="IGL">IGL</option>
-  <option value="AWP">AWP</option>
-  <option value="Starplayer">Starplayer</option>
-  <option value="Entry">Entry</option>
-  <option value="Anchor ( closed site )">Anchor ( closed site )</option>
-  <option value="Anchor ( open site )">Anchor ( open site )</option>
-  <option value="Support">Support</option>
-  <option value="Hybrid">Hybrid</option>
-</select>
+      <option value="">Роль</option>
+      <option value="IGL">IGL</option>
+      <option value="AWP">AWP</option>
+      <option value="Starplayer">Starplayer</option>
+      <option value="Entry">Entry</option>
+      <option value="Anchor ( closed site )">Anchor ( closed site )</option>
+      <option value="Anchor ( open site )">Anchor ( open site )</option>
+      <option value="Support">Support</option>
+      <option value="Hybrid">Hybrid</option>
+    </select>
 
-
-    <!-- Возраст -->
     <input type="number" name="entry.1483517602" placeholder="Вік" required>
-
-    <!-- Город -->
     <input type="text" name="entry.1973273680" placeholder="Місто проживання" required>
 
-    <!-- Свет -->
     <select name="entry.1316049373" required>
       <option value="">Ситуація зі світлом</option>
       <option value="Світло стабільне">Світло стабільне</option>
-      <option value="Іноді пропадає">Іноді пропадає</option>
+      <option value="Є генератор / екофлоу">Є генератор / екофлоум</option>
+      <option value="Бувають відключення">Бувають відключення</option>
       <option value="Часті відключення">Часті відключення</option>
     </select>
 
-    <!-- Медиа -->
     <select name="entry.1142987024" required>
       <option value="">Медіа-активність</option>
       <option value="Так, без проблем">Так, без проблем</option>
-      <option value="Можливо">Можливо</option>
+      <option value="Так, але не часто">Так, але не часто</option>
       <option value="Ні">Ні</option>
     </select>
 
-    <!-- Контакт -->
     <input type="text" name="entry.1134761655" placeholder="Telegram / Discord / Instagram" required>
 
-    <button type="submit">Подати заявку</button>
+    <button type="submit" class="apply-submit">Подати заявку</button>
   </form>
 
   <iframe name="hidden_iframe" style="display:none;"></iframe>
