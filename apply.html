@@ -48,11 +48,13 @@
   </p>
 
   <form
-    class="apply-form"
-    action="https://docs.google.com/forms/d/e/1FAIpQLSf0lv4_NTw6ccuiUHw0EAJc14AGRdtM7CbBd8_9_pEgH6V3zQ/formResponse"
-    method="POST"
-    target="hidden_iframe"
-  >
+  class="apply-form"
+  action="https://docs.google.com/forms/d/e/1FAIpQLSf0lv4_NTw6ccuiUHw0EAJc14AGRdtM7CbBd8_9_pEgH6V3zQ/formResponse"
+  method="POST"
+  target="hidden_iframe"
+  onsubmit="submitted=true;"
+>
+
 
     <input type="text" name="entry.1052240686" placeholder="Імʼя та прізвище" required>
     <input type="number" name="entry.1741441292" placeholder="FACEIT ELO" required>
@@ -98,6 +100,37 @@
 
   <iframe name="hidden_iframe" style="display:none;"></iframe>
 </main>
+<script>
+  let submitted = false;
+</script>
+
+<iframe
+  name="hidden_iframe"
+  style="display:none;"
+  onload="if(submitted) showSuccess();">
+</iframe>
+
+<script>
+  function showSuccess() {
+    const form = document.querySelector('.apply-form');
+    form.innerHTML = `
+      <div style="
+        text-align:center;
+        padding:40px;
+        background:#0b0b0b;
+        border-radius:20px;
+      ">
+        <h2 style="color:#d4af37; margin-bottom:12px;">
+          Заявку надіслано ✅
+        </h2>
+        <p style="opacity:0.8;">
+          Ми звʼяжемося з тобою у разі зацікавленості.<br>
+          Дякуємо за заявку до ELNAPO Academy.
+        </p>
+      </div>
+    `;
+  }
+</script>
 
 </body>
 </html>
