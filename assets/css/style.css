@@ -703,3 +703,32 @@ nav a.active {
   }
 }
 
+.apply-cta {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.apply-status {
+  font-size: 14px;
+  color: #d4af37;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.apply-button {
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #d4af37, #b9962e);
+  color: #000;
+  font-weight: 800;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.apply-button:hover {
+  transform: translateY(-2px);
+}
+
