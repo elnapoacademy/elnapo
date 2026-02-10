@@ -111,24 +111,34 @@
 </iframe>
 
 <script>
-  function showSuccess() {
-    const form = document.querySelector('.apply-form');
-    form.innerHTML = `
-      <div style="
-        text-align:center;
-        padding:40px;
-        background:#0b0b0b;
-        border-radius:20px;
-      ">
-        <h2 style="color:#d4af37; margin-bottom:12px;">
-          Заявку надіслано ✅
-        </h2>
-        <p style="opacity:0.8;">
-          Ми звʼяжемося з тобою у разі зацікавленості.<br>
-          Дякуємо за заявку до ELNAPO Academy.
-        </p>
-      </div>
-    `;
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      mode: 'no-cors'
+    }).then(() => {
+      form.innerHTML = `
+        <div style="
+          text-align:center;
+          padding:40px;
+          background:#0b0b0b;
+          border-radius:20px;
+        ">
+          <h2 style="color:#d4af37; margin-bottom:12px;">
+            Заявку надіслано ✅
+          </h2>
+          <p style="opacity:0.8;">
+            Ми звʼяжемося з тобою у разі зацікавленості.<br>
+            Дякуємо за заявку до ELNAPO Academy.
+          </p>
+        </div>
+      `;
+    });
   }
 </script>
 
