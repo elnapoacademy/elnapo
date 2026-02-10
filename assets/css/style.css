@@ -677,12 +677,14 @@ nav a.active {
 }
 
 .apply-cta {
-  margin-top: 30px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
+
 
 .apply-status {
   font-size: 14px;
