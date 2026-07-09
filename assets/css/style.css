@@ -1229,17 +1229,15 @@ grid-template-columns:1fr;
 /*================ ABOUT HOME =================*/
 
 .about-home{
+    display:grid;
+    grid-template-columns:1.4fr 0.9fr;
+    gap:50px;
 
-display:grid;
+    max-width:1300px;
+    margin:0 auto;
 
-grid-template-columns:1.2fr 1fr;
-
-gap:70px;
-
-padding:140px 0;
-
-align-items:center;
-
+    padding:80px 20px;
+    align-items:center;
 }
 
 .section-mini{
@@ -1253,23 +1251,15 @@ font-size:13px;
 }
 
 .about-home h2{
-
-font-size:54px;
-
-margin:18px 0;
-
+    font-size:48px;
+    margin:10px 0 20px;
 }
 
 .about-home p{
-
-font-size:18px;
-
-line-height:1.9;
-
-opacity:.75;
-
-max-width:700px;
-
+    font-size:18px;
+    line-height:1.7;
+    opacity:.8;
+    max-width:650px;
 }
 
 .gold-btn{
@@ -1312,23 +1302,41 @@ gap:25px;
 
 .stat-card{
 
-background:#0b0b0b;
+    background:#0b0b0b;
 
-padding:40px;
+    border:1px solid rgba(212,175,55,.15);
 
-border-radius:22px;
+    border-radius:18px;
 
-border:1px solid rgba(212,175,55,.15);
+    padding:28px;
 
-transition:.35s;
+    transition:.3s;
+
+}
+
+.stat-card h3{
+
+    font-size:40px;
+
+    margin-bottom:6px;
+
+    color:#d4af37;
+
+}
+
+.stat-card span{
+
+    font-size:16px;
+
+    opacity:.65;
 
 }
 
 .stat-card:hover{
 
-transform:translateY(-8px);
+    transform:translateY(-5px);
 
-box-shadow:0 20px 45px rgba(212,175,55,.15);
+    box-shadow:0 15px 35px rgba(212,175,55,.12);
 
 }
 
