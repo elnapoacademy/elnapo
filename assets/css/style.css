@@ -1654,3 +1654,12 @@ height:38px;
 .reveal:nth-child(3){transition-delay:.25s;}
 .reveal:nth-child(4){transition-delay:.35s;}
 .reveal:nth-child(5){transition-delay:.45s;}
+
+.live-section,
+.quick-nav,
+.about-home,
+.partners{
+    position:relative;
+    z-index:20;
+    background:#050505;
+}
