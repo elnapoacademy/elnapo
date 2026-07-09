@@ -7,8 +7,10 @@ default-src 'self';
 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
 font-src 'self' https://fonts.gstatic.com;
 img-src 'self' data: https:;
-media-src 'self';
-script-src 'self';
+media-src 'self' https:;
+script-src 'self' https://player.twitch.tv https://embed.twitch.tv;
+frame-src https://player.twitch.tv https://www.twitch.tv;
+connect-src https://*.twitch.tv https://gql.twitch.tv;
 ">
 
 <meta http-equiv="X-Frame-Options" content="DENY">
