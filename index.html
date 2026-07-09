@@ -85,7 +85,7 @@ connect-src https://*.twitch.tv https://gql.twitch.tv;
 
 </section>
 
- <section class="live-section reveal">
+ <section class="live-section">
 
     <div class="section-title">
         <span>LIVE</span>
@@ -133,7 +133,7 @@ connect-src https://*.twitch.tv https://gql.twitch.tv;
 
 </section>
 
- <section class="quick-nav reveal">
+ <section class="quick-nav">
 
     <div class="section-title">
         <span>ELNAPO</span>
@@ -185,7 +185,7 @@ connect-src https://*.twitch.tv https://gql.twitch.tv;
 
 
 <!-- ================= ABOUT ================= -->
-<section class="about-home reveal">
+<section class="about-home">
 
     <div class="about-left">
 
@@ -238,7 +238,7 @@ ELNAPO Academy — українська кіберспортивна акаде�
 </section>
 
 <!-- ================= SPONSORS ================= -->
-<section class="partners reveal">
+<section class="partners">
 
     <div class="section-title">
         <span>PARTNERS</span>
@@ -346,35 +346,6 @@ const y=window.scrollY;
 hero.style.transform=`translateY(${y*0.22}px) scale(1.08)`;
 
 });
-
-</script>
-<script>
-
-const reveals = document.querySelectorAll(".reveal");
-
-function revealOnScroll(){
-
-    reveals.forEach(el=>{
-
-        const top = el.getBoundingClientRect().top;
-
-        const visible = window.innerHeight * 0.85;
-
-        if(top < visible){
-
-            el.classList.add("active");
-
-        }
-
-    });
-
-}
-
-window.addEventListener("scroll", revealOnScroll);
-
-window.addEventListener("load", revealOnScroll);
-
-</script>
 
 </script>
 </body>
