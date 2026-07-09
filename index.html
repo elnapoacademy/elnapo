@@ -52,19 +52,35 @@ script-src 'self';
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline>
-    <source src="assets/video/hero.mp4" type="video/mp4">
-  </video>
 
-  <div class="hero-overlay"></div>
-  <div class="hero-watermark">ELNAPO ACADEMY</div>
+    <img src="assets/images/team-photo.png" alt="ELNAPO Academy" class="hero-bg">
 
-  <div class="hero-content">
-    <h1>ELNAPO ACADEMY</h1>
-    <p>Формуємо нове покоління кіберспортсменів</p>
-  </div>
+    <div class="hero-overlay"></div>
 
-  <canvas id="particles"></canvas>
+    <div class="hero-gradient"></div>
+
+    <div id="particles"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-top">
+            Українська кіберспортивна академія
+        </span>
+
+        <h1>ELNAPO</h1>
+
+        <h2>ACADEMY</h2>
+
+        <p>
+            Розвиваємо молодих гравців та створюємо майбутнє українського кіберспорту.
+        </p>
+
+        <div class="hero-scroll">
+            ↓
+        </div>
+
+    </div>
+
 </section>
 
 
@@ -117,6 +133,20 @@ ElNapo Academy — граємо, розвиваємось, перемагаєм�
   burger.addEventListener('click', () => {
     nav.classList.toggle('active');
   });
+</script>
+
+ <script>
+
+const hero=document.querySelector(".hero-bg");
+
+window.addEventListener("scroll",()=>{
+
+const y=window.scrollY;
+
+hero.style.transform=`translateY(${y*0.22}px) scale(1.08)`;
+
+});
+
 </script>
 </body>
 </html>
