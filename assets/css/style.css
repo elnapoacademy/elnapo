@@ -2894,3 +2894,17 @@ font-size:54px;
 }
 
 }
+
+.match-card{
+    position: relative;
+}
+
+.details-btn{
+    position: relative;
+    z-index: 20;
+    pointer-events: auto;
+}
+
+.match-card::before{
+    pointer-events:none;
+}
