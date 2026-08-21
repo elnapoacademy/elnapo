@@ -1609,3 +1609,301 @@ section {
     }
 
 }
+
+/* =========================================
+   CONTRACT RESULTS
+========================================= */
+
+.contract-result {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    align-items: center;
+
+    min-height: 260px;
+
+    padding: 35px 45px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(212,175,55,0.035),
+            rgba(10,10,10,0.98)
+        );
+
+    border: 1px solid rgba(212,175,55,0.15);
+    border-radius: 22px;
+
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.contract-result::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 3px;
+
+    background: #d4af37;
+
+    opacity: .7;
+}
+
+.contract-result:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(212,175,55,0.4);
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.35),
+        0 0 35px rgba(212,175,55,.06);
+}
+
+
+/* =========================================
+   LOGOS
+========================================= */
+
+.contract-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.contract-logo {
+    width: 105px;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,.025);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    padding: 14px;
+
+    transition: .35s ease;
+}
+
+.contract-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.contract-result:hover .contract-logo {
+    border-color: rgba(212,175,55,.25);
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.contract-arrow {
+    font-size: 34px;
+
+    color: #d4af37;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+}
+
+.contract-result:hover .contract-arrow {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   INFORMATION
+========================================= */
+
+.contract-info {
+    padding-left: 30px;
+}
+
+.contract-info .player-name {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 12px;
+}
+
+.contract-info .player-name h3 {
+    margin: 0;
+
+    font-size: 27px;
+
+    color: #fff;
+
+    font-weight: 800;
+}
+
+.contract-info .player-name span {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   BADGES
+========================================= */
+
+.contract-badges {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 10px 0 15px;
+}
+
+.contract-badge,
+.hltv-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 14px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* CONTRACT */
+
+.contract-badge {
+    color: #d4af37;
+
+    background: rgba(212,175,55,.08);
+
+    border: 1px solid rgba(212,175,55,.25);
+}
+
+
+/* HLTV */
+
+.hltv-badge {
+    color: #fff;
+
+    background: rgba(255,255,255,.07);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.04);
+}
+
+
+.contract-info p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #858585;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HLTV SPECIAL CARD
+========================================= */
+
+.hltv-result {
+    border-color: rgba(212,175,55,.25);
+}
+
+.hltv-result::before {
+    width: 4px;
+
+    opacity: 1;
+
+    box-shadow:
+        0 0 18px rgba(212,175,55,.35);
+}
+
+.hltv-result .contract-logo:last-child {
+    border-color: rgba(212,175,55,.3);
+
+    box-shadow:
+        0 0 25px rgba(212,175,55,.06);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .contract-result {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 30px 25px;
+
+        text-align: center;
+    }
+
+    .contract-player {
+        gap: 15px;
+    }
+
+    .contract-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .contract-arrow {
+        font-size: 27px;
+    }
+
+    .contract-info {
+        padding-left: 0;
+    }
+
+    .contract-info .player-name {
+        justify-content: center;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .contract-badges {
+        justify-content: center;
+    }
+
+    .contract-info p {
+        margin: auto;
+    }
+
+}
