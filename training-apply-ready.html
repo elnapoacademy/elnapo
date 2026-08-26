@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Заявка на навчання — ELNAPO Academy</title>
+
+<meta
+name="description"
+content="Запишись на навчання до ELNAPO Academy. Групові та індивідуальні заняття з Counter-Strike 2."
+>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet"
+>
+
+<link rel="stylesheet" href="assets/css/training-apply.css">
+
+<link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            ELNAPO
+        </a>
+
+        <nav>
+
+            <a href="index.html">Головна</a>
+
+            <a href="team.html">Склад команди</a>
+
+            <a href="academy.html">Академія</a>
+
+            <a href="academy-training.html">Навчання</a>
+
+            <a href="staff.html">Керівництво</a>
+
+            <a href="achievements.html">Досягнення</a>
+
+            <a href="esea.html">ESEA</a>
+
+            <a href="news.html">Новини</a>
+
+            <a href="contacts.html">Контакти</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= PAGE ================= -->
+
+<main class="apply-page">
+
+
+    <!-- HERO -->
+
+    <section class="apply-hero">
+
+        <div class="hero-glow"></div>
+
+        <span class="section-label">
+            ELNAPO ACADEMY
+        </span>
+
+        <h1>
+            Запис на <span>навчання</span>
+        </h1>
+
+        <p>
+            Заповни коротку заявку — ми зв'яжемося з тобою,
+            дізнаємося про твої цілі та підберемо оптимальний
+            формат навчання.
+        </p>
+
+    </section>
+
+
+
+    <!-- FREE BLOCK -->
+
+    <section class="community-banner">
+
+        <div class="community-icon">
+            ★
+        </div>
+
+        <div>
+
+            <strong>
+                Навчання для жителів Близнюківської громади — безкоштовне
+            </strong>
+
+            <p>
+                Якщо ти проживаєш на території Близнюківської громади,
+                участь у програмі навчання ELNAPO Academy
+                надається безкоштовно.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FORM -->
+
+    <section class="apply-section">
+
+
+        <div class="form-heading">
+
+            <span>
+                APPLICATION
+            </span>
+
+            <h2>
+                Заявка на навчання
+            </h2>
+
+            <p>
+                Розкажи трохи про себе — це допоможе нам
+                краще підготувати навчальний процес.
+            </p>
+
+        </div>
+
+
+
+        <!--
+
+        ВАЖНО:
+
+        ЗАМЕНИ:
+
+        YOUR_FORM_ID
+
+        на ID твоєї форми Formspree.
+
+        Например:
+
+        https://formspree.io/f/xabcdefg
+
+        -->
+
+        <form
+            id="trainingForm"
+            class="training-form"
+            action="https://formspree.io/f/mbgrnwww"
+            method="POST"
+        >
+
+
+            <!-- ================= PERSONAL ================= -->
+
+            <div class="form-block">
+
+                <div class="block-title">
+
+                    <span>01</span>
+
+                    <div>
+                        <h3>Особиста інформація</h3>
+                        <p>Основна інформація про тебе.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Ім'я та прізвище
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Наприклад: Іван Іванов"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="age">
+                            Вік
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="8"
+                            max="50"
+                            placeholder="16"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            Населений пункт
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Київ"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="telegram">
+                            Telegram
+                        </label>
+
+                        <input
+                            type="text"
+                            id="telegram"
+                            name="telegram"
+                            placeholder="@username"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= CS ================= -->
+
+            <div class="form-block">
+
+                <div class="block-title">
+
+                    <span>02</span>
+
+                    <div>
+
+                        <h3>
+                            Твій рівень у Counter-Strike
+                        </h3>
+
+                        <p>
+                            Допоможе нам визначити стартову точку.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="faceit">
+                            Faceit Nickname
+                        </label>
+
+                        <input
+                            type="text"
+                            id="faceit"
+                            name="faceit"
+                            placeholder="your_nickname"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="faceit-url">
+                            Посилання на Faceit
+                        </label>
+
+                        <input
+                            type="url"
+                            id="faceit-url"
+                            name="faceit_url"
+                            placeholder="https://www.faceit.com/..."
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="level">
+                            Faceit Level
+                        </label>
+
+                        <select
+                            id="level"
+                            name="faceit_level"
+                            required
+                        >
+
+                            <option value="">
+                                Обери рівень
+                            </option>
+
+                            <option>Не грав</option>
+                            <option>1 Level</option>
+                            <option>2 Level</option>
+                            <option>3 Level</option>
+                            <option>4 Level</option>
+                            <option>5 Level</option>
+                            <option>6 Level</option>
+                            <option>7 Level</option>
+                            <option>8 Level</option>
+                            <option>9 Level</option>
+                            <option>10 Level</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="elo">
+                            Поточний ELO
+                        </label>
+
+                        <input
+                            type="number"
+                            id="elo"
+                            name="elo"
+                            min="0"
+                            max="4000"
+                            placeholder="1850"
+                        >
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FORMAT ================= -->
+
+            <div class="form-block">
+
+                <div class="block-title">
+
+                    <span>03</span>
+
+                    <div>
+
+                        <h3>
+                            Формат навчання
+                        </h3>
+
+                        <p>
+                            Обери формат, який тобі підходить.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="choice-grid">
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="training_format"
+                            value="Групові заняття"
+                            required
+                        >
+
+                        <div class="choice-content">
+
+                            <div class="choice-icon">
+                                👥
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Групові
+                                </h4>
+
+                                <p>
+                                    Робота в команді,
+                                    комунікація та командна гра.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="training_format"
+                            value="Індивідуальні заняття"
+                        >
+
+                        <div class="choice-content">
+
+                            <div class="choice-icon">
+                                🎯
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Індивідуальні
+                                </h4>
+
+                                <p>
+                                    Персональна робота
+                                    з тренером над твоєю грою.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label class="choice-card">
+
+                        <input
+                            type="radio"
+                            name="training_format"
+                            value="Не знаю, потрібна консультація"
+                        >
+
+                        <div class="choice-content">
+
+                            <div class="choice-icon">
+                                ?
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Не визначився
+                                </h4>
+
+                                <p>
+                                    Допоможіть підібрати
+                                    оптимальний формат.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PACKAGE ================= -->
+
+            <div class="form-block">
+
+                <div class="block-title">
+
+                    <span>04</span>
+
+                    <div>
+
+                        <h3>
+                            Пакет навчання
+                        </h3>
+
+                        <p>
+                            Обери бажану тривалість.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="package-grid">
+
+
+                    <label class="package-card">
+
+                        <input
+                            type="radio"
+                            name="package"
+                            value="Одне заняття / день"
+                            required
+                        >
+
+                        <div>
+
+                            <span class="package-tag">
+                                START
+                            </span>
+
+                            <h4>
+                                День
+                            </h4>
+
+                            <p>
+                                Одне тренування для знайомства
+                                з академією та тренером.
+                            </p>
+
+                            <strong>
+                                Разове заняття
+                            </strong>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label class="package-card">
+
+                        <input
+                            type="radio"
+                            name="package"
+                            value="Тиждень"
+                        >
+
+                        <div>
+
+                            <span class="package-tag">
+                                TRY
+                            </span>
+
+                            <h4>
+                                Тиждень
+                            </h4>
+
+                            <p>
+                                Короткий інтенсив для оцінки
+                                рівня та перших результатів.
+                            </p>
+
+                            <strong>
+                                1 тиждень
+                            </strong>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label class="package-card featured">
+
+                        <input
+                            type="radio"
+                            name="package"
+                            value="Місяць"
+                        >
+
+                        <div>
+
+                            <span class="package-tag">
+                                BEST
+                            </span>
+
+                            <h4>
+                                Місяць
+                            </h4>
+
+                            <p>
+                                Повноцінна системна програма
+                                розвитку гравця.
+                            </p>
+
+                            <strong>
+                                1 місяць
+                            </strong>
+
+                        </div>
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= GOALS ================= -->
+
+            <div class="form-block">
+
+                <div class="block-title">
+
+                    <span>05</span>
+
+                    <div>
+
+                        <h3>
+                            Твої цілі
+                        </h3>
+
+                        <p>
+                            Що саме ти хочеш покращити?
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="goal">
+                        Основна ціль
+                    </label>
+
+                    <select
+                        id="goal"
+                        name="goal"
+                        required
+                    >
+
+                        <option value="">
+                            Обери основну ціль
+                        </option>
+
+                        <option>
+                            Підняти Faceit Level
+                        </option>
+
+                        <option>
+                            Підняти ELO
+                        </option>
+
+                        <option>
+                            Покращити індивідуальну гру
+                        </option>
+
+                        <option>
+                            Навчитися командній грі
+                        </option>
+
+                        <option>
+                            Підготуватися до турнірів
+                        </option>
+
+                        <option>
+                            Потрапити до команди
+                        </option>
+
+                        <option>
+                            Підготовка до професійного кіберспорту
+                        </option>
+
+                        <option>
+                            Інше
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="message">
+                        Розкажи детальніше
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Наприклад: хочу піднятися з 7 до 10 рівня, покращити стрільбу та навчитися краще грати в команді..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SCHEDULE ================= -->
+
+            <div class="form-block">
+
+                <div class="block-title">
+
+                    <span>06</span>
+
+                    <div>
+
+                        <h3>
+                            Зручний час
+                        </h3>
+
+                        <p>
+                            Коли тобі найзручніше тренуватися?
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="days">
+                            Дні
+                        </label>
+
+                        <input
+                            type="text"
+                            id="days"
+                            name="preferred_days"
+                            placeholder="Пн, Ср, Пт"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Орієнтовний час
+                        </label>
+
+                        <input
+                            type="text"
+                            id="time"
+                            name="preferred_time"
+                            placeholder="18:00 – 21:00"
+                        >
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SUBMIT ================= -->
+
+            <div class="submit-area">
+
+                <div class="submit-info">
+
+                    <span>
+                        ELNAPO ACADEMY
+                    </span>
+
+                    <p>
+                        Після відправлення заявки ми зв'яжемося
+                        з тобою та обговоримо подальші кроки.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+
+                    Відправити заявку
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+        <div id="formSuccess" class="form-success" style="display:none; text-align:center; padding:70px 30px;">
+            <div style="width:72px;height:72px;margin:0 auto 25px;border-radius:50%;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800;">✓</div>
+            <div style="font-size:12px;letter-spacing:3px;opacity:.5;margin-bottom:12px;">ELNAPO ACADEMY</div>
+            <h2 style="font-size:clamp(30px,4vw,48px);margin:0 0 18px;">Заявку успішно відправлено!</h2>
+            <p style="font-size:16px;line-height:1.7;opacity:.7;margin-bottom:35px;">
+                Дякуємо за довіру до ELNAPO Academy.<br>
+                Наш тренер зв'яжеться з вами найближчим часом.
+            </p>
+            <a href="index.html" class="submit-button" style="display:inline-flex;text-decoration:none;">На головну <span>→</span></a>
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= BOTTOM ================= -->
+
+    <section class="apply-bottom">
+
+        <span>
+            НЕ ЗНАЄШ, ЩО ОБРАТИ?
+        </span>
+
+        <h2>
+            Це нормально.
+        </h2>
+
+        <p>
+            Просто залиш заявку та напиши про свою ситуацію.
+            Ми самі підберемо формат навчання,
+            який буде найкраще підходити саме тобі.
+        </p>
+
+        <a href="contacts.html">
+            Задати питання →
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-logo">
+
+            <h2>
+                ELNAPO
+            </h2>
+
+            <p>
+                Українська кіберспортивна академія
+                Counter-Strike 2.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>
+                Навігація
+            </h3>
+
+            <a href="index.html">
+                Головна
+            </a>
+
+            <a href="team.html">
+                Склад команди
+            </a>
+
+            <a href="academy.html">
+                Академія
+            </a>
+
+            <a href="academy-training.html">
+                Навчання
+            </a>
+
+            <a href="contacts.html">
+                Контакти
+            </a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>
+                Соцмережі
+            </h3>
+
+            <a href="https://instagram.com/elnapoacademy" target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://tiktok.com/@elnapoacademy" target="_blank">
+                TikTok
+            </a>
+
+            <a href="https://youtube.com/@elnapoacademy" target="_blank">
+                YouTube
+            </a>
+
+            <a href="https://twitch.tv/elnapoacademy" target="_blank">
+                Twitch
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 ELNAPO Academy. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script>
+const trainingForm = document.getElementById('trainingForm');
+const formSuccess = document.getElementById('formSuccess');
+
+trainingForm.addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const submitButton = trainingForm.querySelector('[type="submit"]');
+    const originalButtonHTML = submitButton.innerHTML;
+    submitButton.disabled = true;
+    submitButton.innerHTML = 'Відправляємо...';
+
+    try {
+        const response = await fetch(trainingForm.action, {
+            method: 'POST',
+            body: new FormData(trainingForm),
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (!response.ok) throw new Error('Formspree error');
+
+        trainingForm.style.display = 'none';
+        formSuccess.style.display = 'block';
+        trainingForm.reset();
+        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (error) {
+        alert('Не вдалося відправити заявку. Спробуйте ще раз.');
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalButtonHTML;
+    }
+});
+</script>
+
+</body>
+</html>
