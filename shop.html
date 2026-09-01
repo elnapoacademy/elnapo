@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Магазин — ELNAPO Academy</title>
+
+    <link rel="stylesheet" href="assets/css/shop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="shop-header">
+
+    <a href="index.html" class="shop-logo">
+        ELNAPO
+    </a>
+
+    <nav class="shop-nav">
+        <a href="index.html">Головна</a>
+        <a href="academy.html">Академія</a>
+        <a href="academy-training.html">Навчання</a>
+        <a href="shop.html" class="active">Магазин</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+
+    <button class="cart-button" onclick="openCart()">
+        <span class="cart-icon">🛒</span>
+        <span>Кошик</span>
+        <b id="cartCount">0</b>
+    </button>
+
+    <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="index.html">Головна</a>
+    <a href="academy.html">Академія</a>
+    <a href="academy-training.html">Навчання</a>
+    <a href="shop.html">Магазин</a>
+    <a href="contacts.html">Контакти</a>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="shop-hero">
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            ELNAPO STORE
+        </div>
+
+        <h1>
+            Атрибутика<br>
+            <span>для тих, хто грає.</span>
+        </h1>
+
+        <p>
+            Фірмовий мерч ELNAPO, 3D-друк,
+            аксесуари для геймерів та багато іншого.
+        </p>
+
+        <a href="#products" class="hero-button">
+            Переглянути товари
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SHOP ================= -->
+
+<main class="shop-container" id="products">
+
+    <!-- TOP BAR -->
+
+    <div class="shop-top">
+
+        <div>
+            <span class="products-count" id="productsCount">
+                15 товарів
+            </span>
+        </div>
+
+        <div class="shop-tools">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Пошук товару..."
+                    oninput="filterProducts()"
+                >
+
+            </div>
+
+            <select id="sortSelect" onchange="filterProducts()">
+
+                <option value="default">
+                    Сортування
+                </option>
+
+                <option value="cheap">
+                    Спочатку дешевші
+                </option>
+
+                <option value="expensive">
+                    Спочатку дорожчі
+                </option>
+
+                <option value="name">
+                    За назвою
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <div class="categories">
+
+        <button class="category active" data-category="all">
+            Все
+        </button>
+
+        <button class="category" data-category="merch">
+            Одяг
+        </button>
+
+        <button class="category" data-category="3d">
+            3D-друк
+        </button>
+
+        <button class="category" data-category="desk">
+            Для столу
+        </button>
+
+        <button class="category" data-category="gaming">
+            Gaming
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <section class="products-grid" id="productsGrid">
+
+
+        <!-- 1 -->
+
+        <article
+            class="product-card"
+            data-category="3d"
+            data-name="Підставка під навушники ELNAPO"
+            data-price="650"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/headphone-stand.jpg"
+                    alt="Підставка під навушники ELNAPO"
+                >
+
+                <span class="product-badge">
+                    ХІТ
+                </span>
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    3D-ДРУК
+                </span>
+
+                <h3>
+                    Підставка під навушники ELNAPO
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(12)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        650 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 2 -->
+
+        <article
+            class="product-card"
+            data-category="desk"
+            data-name="Підставка під геймпад"
+            data-price="520"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/gamepad-stand.jpg"
+                    alt="Підставка під геймпад"
+                >
+
+                <span class="product-badge new">
+                    НОВИНКА
+                </span>
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    ДЛЯ СТОЛУ
+                </span>
+
+                <h3>
+                    Підставка під геймпад
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(8)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        520 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 3 -->
+
+        <article
+            class="product-card"
+            data-category="desk"
+            data-name="Підставка під телефон ELNAPO"
+            data-price="350"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/phone-stand.jpg"
+                    alt="Підставка під телефон"
+                >
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    ДЛЯ СТОЛУ
+                </span>
+
+                <h3>
+                    Підставка під телефон ELNAPO
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(15)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        350 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 4 -->
+
+        <article
+            class="product-card"
+            data-category="3d"
+            data-name="Підставка під мишу"
+            data-price="450"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/mouse-stand.jpg"
+                    alt="Підставка під мишу"
+                >
+
+                <span class="product-badge">
+                    ELNAPO
+                </span>
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    3D-ДРУК
+                </span>
+
+                <h3>
+                    Підставка під мишу
+                </h3>
+
+                <div class="rating">
+                    ★★★★☆
+                    <span>(6)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        450 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 5 -->
+
+        <article
+            class="product-card"
+            data-category="desk"
+            data-name="Органайзер для кабелів"
+            data-price="280"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/cable-organizer.jpg"
+                    alt="Органайзер для кабелів"
+                >
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    ДЛЯ СТОЛУ
+                </span>
+
+                <h3>
+                    Органайзер для кабелів
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(19)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        280 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 6 -->
+
+        <article
+            class="product-card"
+            data-category="3d"
+            data-name="Тримач USB-флешок"
+            data-price="300"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/usb-holder.jpg"
+                    alt="Тримач USB-флешок"
+                >
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    3D-ДРУК
+                </span>
+
+                <h3>
+                    Тримач USB-флешок
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(7)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        300 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 7 -->
+
+        <article
+            class="product-card"
+            data-category="3d"
+            data-name="Підставка під кружку ELNAPO"
+            data-price="250"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/cup-holder.jpg"
+                    alt="Підставка під кружку"
+                >
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    3D-ДРУК
+                </span>
+
+                <h3>
+                    Підставка під кружку ELNAPO
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(11)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        250 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 8 -->
+
+        <article
+            class="product-card"
+            data-category="desk"
+            data-name="Органайзер для робочого столу"
+            data-price="700"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/desk-organizer.jpg"
+                    alt="Органайзер для робочого столу"
+                >
+
+                <span class="product-badge">
+                    ХІТ
+                </span>
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    ДЛЯ СТОЛУ
+                </span>
+
+                <h3>
+                    Органайзер для робочого столу
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(21)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        700 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 9 -->
+
+        <article
+            class="product-card"
+            data-category="gaming"
+            data-name="Футболка ELNAPO"
+            data-price="850"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/tshirt.jpg"
+                    alt="Футболка ELNAPO"
+                >
+
+                <span class="product-badge new">
+                    MERCH
+                </span>
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    ОДЯГ
+                </span>
+
+                <h3>
+                    Футболка ELNAPO
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(34)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        850 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 10 -->
+
+        <article
+            class="product-card"
+            data-category="3d"
+            data-name="Тримач кабелю ELNAPO"
+            data-price="180"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/cable-holder.jpg"
+                    alt="Тримач кабелю"
+                >
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    3D-ДРУК
+                </span>
+
+                <h3>
+                    Тримач кабелю ELNAPO
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(27)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        180 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 11 -->
+
+        <article
+            class="product-card"
+            data-category="desk"
+            data-name="Кріплення для навушників під стіл"
+            data-price="400"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/underdesk-headphone.jpg"
+                    alt="Кріплення для навушників під стіл"
+                >
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    ДЛЯ СТОЛУ
+                </span>
+
+                <h3>
+                    Кріплення для навушників під стіл
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(9)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        400 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 12 -->
+
+        <article
+            class="product-card"
+            data-category="3d"
+            data-name="Міні-урна для столу"
+            data-price="550"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/mini-bin.jpg"
+                    alt="Міні-урна для столу"
+                >
+
+                <span class="product-badge new">
+                    НОВИНКА
+                </span>
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    3D-ДРУК
+                </span>
+
+                <h3>
+                    Міні-урна для столу
+                </h3>
+
+                <div class="rating">
+                    ★★★★☆
+                    <span>(5)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        550 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 13 -->
+
+        <article
+            class="product-card"
+            data-category="3d"
+            data-name="Держатель для пульта"
+            data-price="330"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/remote-holder.jpg"
+                    alt="Держатель для пульта"
+                >
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    3D-ДРУК
+                </span>
+
+                <h3>
+                    Держатель для пульта
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(10)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        330 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 14 -->
+
+        <article
+            class="product-card"
+            data-category="gaming"
+            data-name="Брелок ELNAPO"
+            data-price="220"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/keychain.jpg"
+                    alt="Брелок ELNAPO"
+                >
+
+                <span class="product-badge">
+                    MERCH
+                </span>
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    АТРИБУТИКА
+                </span>
+
+                <h3>
+                    Брелок ELNAPO
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(32)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        220 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 15 -->
+
+        <article
+            class="product-card"
+            data-category="3d"
+            data-name="Тримач для контролера"
+            data-price="480"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="assets/img/shop/controller-holder.jpg"
+                    alt="Тримач для контролера"
+                >
+
+                <button
+                    class="quick-view"
+                    onclick="openProduct(this)"
+                >
+                    Переглянути
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    3D-ДРУК
+                </span>
+
+                <h3>
+                    Тримач для контролера
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                    <span>(13)</span>
+                </div>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        480 ₴
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(this)"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+</main>
+
+
+<!-- ================= CART ================= -->
+
+<div class="modal-overlay" id="cartModal">
+
+    <div class="cart-modal">
+
+        <button class="close-modal" onclick="closeCart()">
+            ×
+        </button>
+
+        <div class="modal-label">
+            ELNAPO STORE
+        </div>
+
+        <h2>
+            Ваш кошик
+        </h2>
+
+        <div id="cartItems">
+
+            <div class="empty-cart">
+                Кошик поки що порожній
+            </div>
+
+        </div>
+
+        <div class="cart-total">
+
+            <span>
+                Разом
+            </span>
+
+            <strong id="cartTotal">
+                0 ₴
+            </strong>
+
+        </div>
+
+        <button class="checkout-button">
+            Оформити замовлення
+        </button>
+
+        <p class="checkout-note">
+            Після оформлення ми зв'яжемося з вами
+            для підтвердження замовлення.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PRODUCT MODAL ================= -->
+
+<div class="modal-overlay" id="productModal">
+
+    <div class="product-modal">
+
+        <button class="close-modal" onclick="closeProduct()">
+            ×
+        </button>
+
+        <div class="product-modal-image">
+
+            <img id="modalProductImage" src="" alt="">
+
+        </div>
+
+        <div class="product-modal-content">
+
+            <span class="product-category" id="modalProductCategory">
+                3D-ДРУК
+            </span>
+
+            <h2 id="modalProductName">
+                Товар
+            </h2>
+
+            <div class="rating">
+                ★★★★★
+            </div>
+
+            <p>
+                Фірмовий товар ELNAPO для геймерів.
+                Якісний матеріал, акуратне виконання
+                та дизайн у стилі академії.
+            </p>
+
+            <strong
+                class="modal-price"
+                id="modalProductPrice"
+            >
+                0 ₴
+            </strong>
+
+            <button
+                class="checkout-button"
+                onclick="addModalProduct()"
+            >
+                Додати до кошика
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="shop-footer">
+
+    <div class="footer-logo">
+        ELNAPO
+    </div>
+
+    <p>
+        Українська кіберспортивна академія
+        Counter-Strike 2.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Головна</a>
+        <a href="academy.html">Академія</a>
+        <a href="academy-training.html">Навчання</a>
+        <a href="contacts.html">Контакти</a>
+
+    </div>
+
+    <div class="footer-copy">
+        © 2026 ELNAPO Academy. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<script>
+
+/* ================= CART ================= */
+
+let cart = [];
+
+let currentProduct = null;
+
+
+function addToCart(button) {
+
+    const card = button.closest(".product-card");
+
+    const name = card.dataset.name;
+    const price = Number(card.dataset.price);
+    const image = card.querySelector("img").src;
+
+    const existing = cart.find(item => item.name === name);
+
+    if (existing) {
+
+        existing.quantity++;
+
+    } else {
+
+        cart.push({
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+        });
+
+    }
+
+    updateCart();
+
+    button.classList.add("added");
+
+    button.innerHTML = "✓";
+
+    setTimeout(() => {
+
+        button.classList.remove("added");
+        button.innerHTML = "+";
+
+    }, 1000);
+
+}
+
+
+function updateCart() {
+
+    const count = cart.reduce(
+        (sum, item) => sum + item.quantity,
+        0
+    );
+
+    document.getElementById("cartCount").textContent = count;
+
+
+    const container =
+        document.getElementById("cartItems");
+
+
+    if (cart.length === 0) {
+
+        container.innerHTML = `
+            <div class="empty-cart">
+                Кошик поки що порожній
+            </div>
+        `;
+
+    } else {
+
+        container.innerHTML = cart.map((item, index) => `
+
+            <div class="cart-item">
+
+                <img src="${item.image}" alt="">
+
+                <div class="cart-item-info">
+
+                    <strong>
+                        ${item.name}
+                    </strong>
+
+                    <span>
+                        ${item.price} ₴
+                    </span>
+
+                    <div class="quantity">
+
+                        <button onclick="changeQuantity(${index}, -1)">
+                            −
+                        </button>
+
+                        <span>
+                            ${item.quantity}
+                        </span>
+
+                        <button onclick="changeQuantity(${index}, 1)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="remove-item"
+                    onclick="removeFromCart(${index})"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        `).join("");
+
+    }
+
+
+    const total = cart.reduce(
+        (sum, item) =>
+            sum + item.price * item.quantity,
+        0
+    );
+
+    document.getElementById("cartTotal").textContent =
+        total + " ₴";
+
+}
+
+
+function changeQuantity(index, amount) {
+
+    cart[index].quantity += amount;
+
+    if (cart[index].quantity <= 0) {
+
+        cart.splice(index, 1);
+
+    }
+
+    updateCart();
+
+}
+
+
+function removeFromCart(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+
+}
+
+
+function openCart() {
+
+    document
+        .getElementById("cartModal")
+        .classList.add("open");
+
+}
+
+
+function closeCart() {
+
+    document
+        .getElementById("cartModal")
+        .classList.remove("open");
+
+}
+
+
+/* ================= PRODUCT MODAL ================= */
+
+function openProduct(button) {
+
+    const card =
+        button.closest(".product-card");
+
+    currentProduct = {
+
+        name: card.dataset.name,
+
+        price: Number(card.dataset.price),
+
+        category:
+            card.querySelector(".product-category")
+                .textContent,
+
+        image:
+            card.querySelector("img").src
+
+    };
+
+
+    document.getElementById("modalProductImage").src =
+        currentProduct.image;
+
+    document.getElementById("modalProductName").textContent =
+        currentProduct.name;
+
+    document.getElementById("modalProductPrice").textContent =
+        currentProduct.price + " ₴";
+
+    document.getElementById("modalProductCategory").textContent =
+        currentProduct.category;
+
+
+    document
+        .getElementById("productModal")
+        .classList.add("open");
+
+}
+
+
+function closeProduct() {
+
+    document
+        .getElementById("productModal")
+        .classList.remove("open");
+
+}
+
+
+function addModalProduct() {
+
+    if (!currentProduct) return;
+
+
+    const existing =
+        cart.find(
+            item =>
+                item.name === currentProduct.name
+        );
+
+
+    if (existing) {
+
+        existing.quantity++;
+
+    } else {
+
+        cart.push({
+
+            name: currentProduct.name,
+
+            price: currentProduct.price,
+
+            image: currentProduct.image,
+
+            quantity: 1
+
+        });
+
+    }
+
+
+    updateCart();
+
+    closeProduct();
+
+    openCart();
+
+}
+
+
+/* ================= SEARCH / SORT ================= */
+
+function filterProducts() {
+
+    const search =
+        document
+            .getElementById("searchInput")
+            .value
+            .toLowerCase();
+
+    const sort =
+        document
+            .getElementById("sortSelect")
+            .value;
+
+    const activeCategory =
+        document
+            .querySelector(".category.active")
+            .dataset.category;
+
+
+    const grid =
+        document.getElementById("productsGrid");
+
+
+    let cards =
+        Array.from(
+            document.querySelectorAll(".product-card")
+        );
+
+
+    cards.forEach(card => {
+
+        const name =
+            card.dataset.name.toLowerCase();
+
+        const category =
+            card.dataset.category;
+
+
+        const searchMatch =
+            name.includes(search);
+
+        const categoryMatch =
+            activeCategory === "all" ||
+            category === activeCategory;
+
+
+        if (searchMatch && categoryMatch) {
+
+            card.style.display = "";
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    const visible =
+        cards.filter(
+            card =>
+                card.style.display !== "none"
+        );
+
+
+    if (sort === "cheap") {
+
+        visible.sort(
+            (a, b) =>
+                Number(a.dataset.price) -
+                Number(b.dataset.price)
+        );
+
+    }
+
+
+    if (sort === "expensive") {
+
+        visible.sort(
+            (a, b) =>
+                Number(b.dataset.price) -
+                Number(a.dataset.price)
+        );
+
+    }
+
+
+    if (sort === "name") {
+
+        visible.sort(
+            (a, b) =>
+                a.dataset.name.localeCompare(
+                    b.dataset.name,
+                    "uk"
+                )
+        );
+
+    }
+
+
+    visible.forEach(card =>
+        grid.appendChild(card)
+    );
+
+
+    document.getElementById("productsCount").textContent =
+        visible.length + " товарів";
+
+}
+
+
+/* ================= CATEGORIES ================= */
+
+document
+    .querySelectorAll(".category")
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            function() {
+
+                document
+                    .querySelectorAll(".category")
+                    .forEach(btn =>
+                        btn.classList.remove("active")
+                    );
+
+                this.classList.add("active");
+
+                filterProducts();
+
+            }
+        );
+
+    });
+
+
+/* ================= MOBILE ================= */
+
+function toggleMobileMenu() {
+
+    document
+        .getElementById("mobileMenu")
+        .classList.toggle("open");
+
+}
+
+
+/* ================= MODAL CLICK ================= */
+
+document
+    .querySelectorAll(".modal-overlay")
+    .forEach(modal => {
+
+        modal.addEventListener(
+            "click",
+            function(e) {
+
+                if (e.target === this) {
+
+                    this.classList.remove("open");
+
+                }
+
+            }
+        );
+
+    });
+
+
+updateCart();
+
+</script>
+
+</body>
+</html>
