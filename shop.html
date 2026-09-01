@@ -6,7 +6,7 @@
 
     <title>Магазин — ELNAPO Academy</title>
 
-    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="shop.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,69 +15,48 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
 <header class="shop-header">
 
     <a href="index.html" class="shop-logo">
         ELNAPO
     </a>
 
-    <nav class="shop-nav">
+    <nav>
         <a href="index.html">Головна</a>
-        <a href="academy.html">Академія</a>
-        <a href="academy-training.html">Навчання</a>
         <a href="shop.html" class="active">Магазин</a>
-        <a href="contacts.html">Контакти</a>
     </nav>
 
     <button class="cart-button" onclick="openCart()">
-        <span class="cart-icon">🛒</span>
-        <span>Кошик</span>
-        <b id="cartCount">0</b>
-    </button>
-
-    <button class="mobile-menu-button" onclick="toggleMobileMenu()">
-        ☰
+        🛒
+        <span id="cartCount">0</span>
     </button>
 
 </header>
 
 
-<!-- ================= MOBILE MENU ================= -->
+<main>
 
-<div class="mobile-menu" id="mobileMenu">
-
-    <a href="index.html">Головна</a>
-    <a href="academy.html">Академія</a>
-    <a href="academy-training.html">Навчання</a>
-    <a href="shop.html">Магазин</a>
-    <a href="contacts.html">Контакти</a>
-
-</div>
-
-
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <section class="shop-hero">
 
+    <div class="hero-glow"></div>
+
     <div class="hero-content">
 
-        <div class="hero-label">
-            ELNAPO STORE
-        </div>
+        <span class="hero-label">ELNAPO STORE</span>
 
         <h1>
-            Атрибутика<br>
-            <span>для тих, хто грає.</span>
+            Атрибутика для тих,<br>
+            хто грає <span>серйозно.</span>
         </h1>
 
         <p>
-            Фірмовий мерч ELNAPO, 3D-друк,
-            аксесуари для геймерів та багато іншого.
+            Мерч ELNAPO, 3D-друк, аксесуари для сетапу
+            та кастомні товари під ваш стиль.
         </p>
 
-        <a href="#products" class="hero-button">
+        <a href="#catalog" class="hero-button">
             Переглянути товари
         </a>
 
@@ -86,61 +65,137 @@
 </section>
 
 
-<!-- ================= SHOP ================= -->
+<!-- INFO -->
 
-<main class="shop-container" id="products">
+<section class="store-info">
 
-    <!-- TOP BAR -->
+    <div class="info-card">
+        <div class="info-icon">🚚</div>
+        <h3>Доставка</h3>
+        <p>
+            Відправляємо по всій Україні.
+            Також можлива доставка по Європі,
+            якщо у вашому місті є відділення Нової пошти.
+        </p>
+    </div>
 
-    <div class="shop-top">
+    <div class="info-card">
+        <div class="info-icon">🎨</div>
+        <h3>Свій колір</h3>
+        <p>
+            Деякі товари можемо надрукувати
+            в іншому кольорі під ваш смак.
+            Напишіть менеджеру перед замовленням.
+        </p>
+    </div>
 
-        <div>
-            <span class="products-count" id="productsCount">
-                15 товарів
-            </span>
+    <div class="info-card">
+        <div class="info-icon">💬</div>
+        <h3>Індивідуальне замовлення</h3>
+        <p>
+            Не знайшли потрібного товару?
+            Зв'яжіться з нами — обговоримо
+            індивідуальне виготовлення.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <div class="info-icon">🕐</div>
+        <h3>Графік роботи</h3>
+        <p>
+            Менеджер на зв'язку щодня
+            з <strong>08:00 до 19:00</strong>.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- HOW TO ORDER -->
+
+<section class="how-section">
+
+    <div class="section-heading">
+        <span>ЯК ЦЕ ПРАЦЮЄ</span>
+        <h2>Замовити — простіше простого.</h2>
+    </div>
+
+    <div class="steps">
+
+        <div class="step">
+            <b>01</b>
+            <h3>Обери товар</h3>
+            <p>
+                Знайди потрібний товар,
+                відкрий детальну інформацію
+                та додай його до кошика.
+            </p>
         </div>
 
-        <div class="shop-tools">
+        <div class="step">
+            <b>02</b>
+            <h3>Оформи замовлення</h3>
+            <p>
+                Вкажи своє ім'я,
+                Telegram та дані для зв'язку.
+            </p>
+        </div>
 
-            <div class="search-box">
+        <div class="step">
+            <b>03</b>
+            <h3>Менеджер зв'яжеться</h3>
+            <p>
+                Ми напишемо вам у Telegram,
+                уточнимо колір, розмір,
+                доставку та всі деталі.
+            </p>
+        </div>
 
-                <span>⌕</span>
+        <div class="step">
+            <b>04</b>
+            <h3>Отримай замовлення</h3>
+            <p>
+                Після підтвердження замовлення
+                виготовляємо та відправляємо товар.
+            </p>
+        </div>
 
-                <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Пошук товару..."
-                    oninput="filterProducts()"
-                >
+    </div>
 
-            </div>
+</section>
 
-            <select id="sortSelect" onchange="filterProducts()">
 
-                <option value="default">
-                    Сортування
-                </option>
+<!-- CATALOG -->
 
-                <option value="cheap">
-                    Спочатку дешевші
-                </option>
+<section class="catalog" id="catalog">
 
-                <option value="expensive">
-                    Спочатку дорожчі
-                </option>
+    <div class="catalog-top">
 
-                <option value="name">
-                    За назвою
-                </option>
+        <div>
+            <span class="section-label">ELNAPO STORE</span>
+            <h2>Каталог</h2>
+        </div>
 
+        <div class="catalog-controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Пошук товару..."
+                oninput="renderProducts()"
+            >
+
+            <select id="sortSelect" onchange="renderProducts()">
+                <option value="default">За замовчуванням</option>
+                <option value="cheap">Від дешевих</option>
+                <option value="expensive">Від дорогих</option>
+                <option value="rating">За рейтингом</option>
             </select>
 
         </div>
 
     </div>
 
-
-    <!-- CATEGORIES -->
 
     <div class="categories">
 
@@ -149,1063 +204,174 @@
         </button>
 
         <button class="category" data-category="merch">
-            Одяг
+            Мерч
         </button>
 
-        <button class="category" data-category="3d">
-            3D-друк
+        <button class="category" data-category="elnapo">
+            Атрибутика ELNAPO
+        </button>
+
+        <button class="category" data-category="phone">
+            Для телефону
+        </button>
+
+        <button class="category" data-category="pc">
+            Для ПК
         </button>
 
         <button class="category" data-category="desk">
             Для столу
         </button>
 
-        <button class="category" data-category="gaming">
-            Gaming
+        <button class="category" data-category="3d">
+            3D-друк
+        </button>
+
+        <button class="category" data-category="accessories">
+            Аксесуари
         </button>
 
     </div>
 
 
-    <!-- PRODUCTS -->
+    <div id="productsGrid" class="products-grid"></div>
 
-    <section class="products-grid" id="productsGrid">
+</section>
 
 
-        <!-- 1 -->
+<!-- SHOP REVIEWS -->
 
-        <article
-            class="product-card"
-            data-category="3d"
-            data-name="Підставка під навушники ELNAPO"
-            data-price="650"
-        >
+<section class="shop-reviews">
 
-            <div class="product-image">
+    <div class="section-heading center">
+        <span>ВІДГУКИ</span>
+        <h2>Що кажуть про ELNAPO Store</h2>
+        <p>
+            Залиште свій відгук після покупки.
+        </p>
+    </div>
 
-                <img
-                    src="assets/img/shop/headphone-stand.jpg"
-                    alt="Підставка під навушники ELNAPO"
-                >
 
-                <span class="product-badge">
-                    ХІТ
-                </span>
+    <div class="shop-rating">
 
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
+        <div class="big-rating">
+            <strong id="shopRating">5.0</strong>
 
+            <div id="shopStars" class="stars">
+                ★★★★★
             </div>
 
-            <div class="product-info">
+            <span id="shopReviewsCount">
+                0 відгуків
+            </span>
+        </div>
 
-                <span class="product-category">
-                    3D-ДРУК
-                </span>
+    </div>
 
-                <h3>
-                    Підставка під навушники ELNAPO
-                </h3>
 
-                <div class="rating">
-                    ★★★★★
-                    <span>(12)</span>
-                </div>
+    <div id="shopReviews" class="reviews-grid"></div>
 
-                <div class="product-bottom">
 
-                    <strong>
-                        650 ₴
-                    </strong>
+    <button class="gold-button" onclick="openShopReview()">
+        Залишити відгук про магазин
+    </button>
 
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
+</section>
 
-                </div>
 
-            </div>
+<!-- CTA -->
 
-        </article>
+<section class="custom-order">
 
+    <span>НЕ ЗНАЙШОВ СВОГО?</span>
 
-        <!-- 2 -->
+    <h2>
+        Зробимо під тебе.
+    </h2>
 
-        <article
-            class="product-card"
-            data-category="desk"
-            data-name="Підставка під геймпад"
-            data-price="520"
-        >
+    <p>
+        Хочеш інший колір, розмір, дизайн
+        або взагалі товар, якого немає в каталозі?
+        Напиши менеджеру — обговоримо.
+    </p>
 
-            <div class="product-image">
+    <a
+        href="https://t.me/"
+        target="_blank"
+        class="gold-button"
+    >
+        Написати менеджеру
+    </a>
 
-                <img
-                    src="assets/img/shop/gamepad-stand.jpg"
-                    alt="Підставка під геймпад"
-                >
-
-                <span class="product-badge new">
-                    НОВИНКА
-                </span>
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    ДЛЯ СТОЛУ
-                </span>
-
-                <h3>
-                    Підставка під геймпад
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(8)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        520 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 3 -->
-
-        <article
-            class="product-card"
-            data-category="desk"
-            data-name="Підставка під телефон ELNAPO"
-            data-price="350"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/phone-stand.jpg"
-                    alt="Підставка під телефон"
-                >
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    ДЛЯ СТОЛУ
-                </span>
-
-                <h3>
-                    Підставка під телефон ELNAPO
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(15)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        350 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 4 -->
-
-        <article
-            class="product-card"
-            data-category="3d"
-            data-name="Підставка під мишу"
-            data-price="450"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/mouse-stand.jpg"
-                    alt="Підставка під мишу"
-                >
-
-                <span class="product-badge">
-                    ELNAPO
-                </span>
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    3D-ДРУК
-                </span>
-
-                <h3>
-                    Підставка під мишу
-                </h3>
-
-                <div class="rating">
-                    ★★★★☆
-                    <span>(6)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        450 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 5 -->
-
-        <article
-            class="product-card"
-            data-category="desk"
-            data-name="Органайзер для кабелів"
-            data-price="280"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/cable-organizer.jpg"
-                    alt="Органайзер для кабелів"
-                >
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    ДЛЯ СТОЛУ
-                </span>
-
-                <h3>
-                    Органайзер для кабелів
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(19)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        280 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 6 -->
-
-        <article
-            class="product-card"
-            data-category="3d"
-            data-name="Тримач USB-флешок"
-            data-price="300"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/usb-holder.jpg"
-                    alt="Тримач USB-флешок"
-                >
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    3D-ДРУК
-                </span>
-
-                <h3>
-                    Тримач USB-флешок
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(7)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        300 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 7 -->
-
-        <article
-            class="product-card"
-            data-category="3d"
-            data-name="Підставка під кружку ELNAPO"
-            data-price="250"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/cup-holder.jpg"
-                    alt="Підставка під кружку"
-                >
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    3D-ДРУК
-                </span>
-
-                <h3>
-                    Підставка під кружку ELNAPO
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(11)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        250 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 8 -->
-
-        <article
-            class="product-card"
-            data-category="desk"
-            data-name="Органайзер для робочого столу"
-            data-price="700"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/desk-organizer.jpg"
-                    alt="Органайзер для робочого столу"
-                >
-
-                <span class="product-badge">
-                    ХІТ
-                </span>
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    ДЛЯ СТОЛУ
-                </span>
-
-                <h3>
-                    Органайзер для робочого столу
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(21)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        700 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 9 -->
-
-        <article
-            class="product-card"
-            data-category="gaming"
-            data-name="Футболка ELNAPO"
-            data-price="850"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/tshirt.jpg"
-                    alt="Футболка ELNAPO"
-                >
-
-                <span class="product-badge new">
-                    MERCH
-                </span>
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    ОДЯГ
-                </span>
-
-                <h3>
-                    Футболка ELNAPO
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(34)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        850 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 10 -->
-
-        <article
-            class="product-card"
-            data-category="3d"
-            data-name="Тримач кабелю ELNAPO"
-            data-price="180"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/cable-holder.jpg"
-                    alt="Тримач кабелю"
-                >
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    3D-ДРУК
-                </span>
-
-                <h3>
-                    Тримач кабелю ELNAPO
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(27)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        180 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 11 -->
-
-        <article
-            class="product-card"
-            data-category="desk"
-            data-name="Кріплення для навушників під стіл"
-            data-price="400"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/underdesk-headphone.jpg"
-                    alt="Кріплення для навушників під стіл"
-                >
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    ДЛЯ СТОЛУ
-                </span>
-
-                <h3>
-                    Кріплення для навушників під стіл
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(9)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        400 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 12 -->
-
-        <article
-            class="product-card"
-            data-category="3d"
-            data-name="Міні-урна для столу"
-            data-price="550"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/mini-bin.jpg"
-                    alt="Міні-урна для столу"
-                >
-
-                <span class="product-badge new">
-                    НОВИНКА
-                </span>
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    3D-ДРУК
-                </span>
-
-                <h3>
-                    Міні-урна для столу
-                </h3>
-
-                <div class="rating">
-                    ★★★★☆
-                    <span>(5)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        550 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 13 -->
-
-        <article
-            class="product-card"
-            data-category="3d"
-            data-name="Держатель для пульта"
-            data-price="330"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/remote-holder.jpg"
-                    alt="Держатель для пульта"
-                >
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    3D-ДРУК
-                </span>
-
-                <h3>
-                    Держатель для пульта
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(10)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        330 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 14 -->
-
-        <article
-            class="product-card"
-            data-category="gaming"
-            data-name="Брелок ELNAPO"
-            data-price="220"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/keychain.jpg"
-                    alt="Брелок ELNAPO"
-                >
-
-                <span class="product-badge">
-                    MERCH
-                </span>
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    АТРИБУТИКА
-                </span>
-
-                <h3>
-                    Брелок ELNAPO
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(32)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        220 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- 15 -->
-
-        <article
-            class="product-card"
-            data-category="3d"
-            data-name="Тримач для контролера"
-            data-price="480"
-        >
-
-            <div class="product-image">
-
-                <img
-                    src="assets/img/shop/controller-holder.jpg"
-                    alt="Тримач для контролера"
-                >
-
-                <button
-                    class="quick-view"
-                    onclick="openProduct(this)"
-                >
-                    Переглянути
-                </button>
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-                    3D-ДРУК
-                </span>
-
-                <h3>
-                    Тримач для контролера
-                </h3>
-
-                <div class="rating">
-                    ★★★★★
-                    <span>(13)</span>
-                </div>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        480 ₴
-                    </strong>
-
-                    <button
-                        class="add-cart"
-                        onclick="addToCart(this)"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-    </section>
+</section>
 
 </main>
 
 
-<!-- ================= CART ================= -->
+<!-- PRODUCT MODAL -->
 
-<div class="modal-overlay" id="cartModal">
+<div id="productModal" class="modal">
 
-    <div class="cart-modal">
-
-        <button class="close-modal" onclick="closeCart()">
-            ×
-        </button>
-
-        <div class="modal-label">
-            ELNAPO STORE
-        </div>
-
-        <h2>
-            Ваш кошик
-        </h2>
-
-        <div id="cartItems">
-
-            <div class="empty-cart">
-                Кошик поки що порожній
-            </div>
-
-        </div>
-
-        <div class="cart-total">
-
-            <span>
-                Разом
-            </span>
-
-            <strong id="cartTotal">
-                0 ₴
-            </strong>
-
-        </div>
-
-        <button class="checkout-button">
-            Оформити замовлення
-        </button>
-
-        <p class="checkout-note">
-            Після оформлення ми зв'яжемося з вами
-            для підтвердження замовлення.
-        </p>
-
-    </div>
-
-</div>
-
-
-<!-- ================= PRODUCT MODAL ================= -->
-
-<div class="modal-overlay" id="productModal">
+    <div class="modal-overlay" onclick="closeProduct()"></div>
 
     <div class="product-modal">
 
-        <button class="close-modal" onclick="closeProduct()">
-            ×
-        </button>
+        <button class="close-modal" onclick="closeProduct()">×</button>
 
-        <div class="product-modal-image">
-
-            <img id="modalProductImage" src="" alt="">
-
+        <div class="modal-product-image">
+            <img id="modalImage" src="" alt="">
         </div>
 
-        <div class="product-modal-content">
+        <div class="modal-product-content">
 
-            <span class="product-category" id="modalProductCategory">
-                3D-ДРУК
-            </span>
+            <span id="modalCategory" class="modal-category"></span>
 
-            <h2 id="modalProductName">
-                Товар
-            </h2>
+            <h2 id="modalTitle"></h2>
 
-            <div class="rating">
-                ★★★★★
+            <div class="modal-rating">
+
+                <span id="modalStars"></span>
+
+                <span id="modalRatingValue"></span>
+
+                <span id="modalReviewsCount"></span>
+
             </div>
 
-            <p>
-                Фірмовий товар ELNAPO для геймерів.
-                Якісний матеріал, акуратне виконання
-                та дизайн у стилі академії.
-            </p>
+            <div id="modalPrice" class="modal-price"></div>
 
-            <strong
-                class="modal-price"
-                id="modalProductPrice"
-            >
-                0 ₴
-            </strong>
+            <p id="modalDescription"></p>
 
-            <button
-                class="checkout-button"
-                onclick="addModalProduct()"
-            >
-                Додати до кошика
-            </button>
+            <div id="modalSpecs" class="modal-specs"></div>
+
+
+            <div class="modal-actions">
+
+                <button id="modalAddButton" class="gold-button">
+                    Додати до кошика
+                </button>
+
+            </div>
+
+
+            <div class="product-reviews-section">
+
+                <div class="review-heading">
+
+                    <h3>Відгуки про товар</h3>
+
+                    <button
+                        class="small-button"
+                        onclick="openProductReview()"
+                    >
+                        Залишити відгук
+                    </button>
+
+                </div>
+
+                <div id="modalReviews" class="modal-reviews"></div>
+
+            </div>
 
         </div>
 
@@ -1214,128 +380,1509 @@
 </div>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- REVIEW MODAL -->
 
-<footer class="shop-footer">
+<div id="reviewModal" class="modal">
+
+    <div class="modal-overlay" onclick="closeReview()"></div>
+
+    <div class="review-modal">
+
+        <button class="close-modal" onclick="closeReview()">×</button>
+
+        <span class="modal-category">
+            ВІДГУК
+        </span>
+
+        <h2 id="reviewTitle">
+            Залишити відгук
+        </h2>
+
+        <form id="reviewForm">
+
+            <input
+                id="reviewName"
+                type="text"
+                placeholder="Ваше ім'я / нікнейм"
+                required
+            >
+
+            <div class="rating-select">
+
+                <span>Оцінка:</span>
+
+                <div id="ratingStars">
+
+                    <button type="button" data-rating="1">★</button>
+                    <button type="button" data-rating="2">★</button>
+                    <button type="button" data-rating="3">★</button>
+                    <button type="button" data-rating="4">★</button>
+                    <button type="button" data-rating="5">★</button>
+
+                </div>
+
+            </div>
+
+            <textarea
+                id="reviewText"
+                placeholder="Напишіть свій відгук..."
+                required
+            ></textarea>
+
+            <button class="gold-button" type="submit">
+                Опублікувати відгук
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- CART -->
+
+<div id="cartModal" class="modal">
+
+    <div class="modal-overlay" onclick="closeCart()"></div>
+
+    <div class="cart-modal">
+
+        <button class="close-modal" onclick="closeCart()">×</button>
+
+        <span class="modal-category">
+            ELNAPO STORE
+        </span>
+
+        <h2>Ваш кошик</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            <span>Разом</span>
+
+            <strong id="cartTotal">0 ₴</strong>
+
+        </div>
+
+        <button
+            class="gold-button"
+            onclick="openOrderForm()"
+        >
+            Оформити замовлення
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ORDER -->
+
+<div id="orderModal" class="modal">
+
+    <div class="modal-overlay" onclick="closeOrder()"></div>
+
+    <div class="order-modal">
+
+        <button class="close-modal" onclick="closeOrder()">×</button>
+
+        <span class="modal-category">
+            ЗАМОВЛЕННЯ
+        </span>
+
+        <h2>Оформлення</h2>
+
+        <p>
+            Після заявки менеджер зв'яжеться
+            з вами у Telegram та уточнить всі деталі.
+        </p>
+
+        <form id="orderForm">
+
+            <input
+                id="orderName"
+                type="text"
+                placeholder="Ваше ім'я"
+                required
+            >
+
+            <input
+                id="orderTelegram"
+                type="text"
+                placeholder="@telegram"
+                required
+            >
+
+            <input
+                id="orderCity"
+                type="text"
+                placeholder="Місто"
+                required
+            >
+
+            <input
+                id="orderPost"
+                type="text"
+                placeholder="Відділення Нової пошти"
+                required
+            >
+
+            <textarea
+                id="orderComment"
+                placeholder="Коментар до замовлення"
+            ></textarea>
+
+            <button class="gold-button" type="submit">
+                Відправити заявку
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<footer>
 
     <div class="footer-logo">
         ELNAPO
     </div>
 
     <p>
-        Українська кіберспортивна академія
-        Counter-Strike 2.
+        © 2026 ELNAPO Academy. ELNAPO Store.
     </p>
-
-    <div class="footer-links">
-
-        <a href="index.html">Головна</a>
-        <a href="academy.html">Академія</a>
-        <a href="academy-training.html">Навчання</a>
-        <a href="contacts.html">Контакти</a>
-
-    </div>
-
-    <div class="footer-copy">
-        © 2026 ELNAPO Academy. All Rights Reserved.
-    </div>
 
 </footer>
 
 
 <script>
 
-/* ================= CART ================= */
+/* =========================================
+   PRODUCTS
+========================================= */
 
-let cart = [];
+const products = [
 
+/* MERCH */
+
+{
+id:1,
+name:"Футболка ELNAPO OLD",
+category:"merch",
+price:2000,
+image:"assets/img/store/old-shirt.jpg",
+description:"Оригінальна футболка ELNAPO OLD. Класичний дизайн першої ери ELNAPO.",
+specs:["100% бавовна","Чорний колір","Розміри S–XXL","Оригінальний дизайн ELNAPO"]
+},
+
+{
+id:2,
+name:"Футболка ELNAPO NEW",
+category:"merch",
+price:2000,
+image:"assets/img/store/new-shirt.jpg",
+description:"Нова офіційна футболка ELNAPO з оновленим дизайном.",
+specs:["100% бавовна","Чорний колір","Розміри S–XXL","Офіційний мерч"]
+},
+
+{
+id:3,
+name:"Футболка ELNAPO Academy",
+category:"merch",
+price:2000,
+image:"assets/img/store/academy-shirt.jpg",
+description:"Офіційна футболка ELNAPO Academy.",
+specs:["100% бавовна","Чорний колір","Розміри S–XXL","ELNAPO Academy"]
+},
+
+{
+id:4,
+name:"Футболка з власним нікнеймом",
+category:"merch",
+price:2500,
+image:"assets/img/store/custom-shirt.jpg",
+description:"Футболка ELNAPO з вашим власним нікнеймом та номером.",
+specs:["Власний нікнейм","Власний номер","Розміри S–XXL","Кастомне виготовлення"]
+},
+
+{
+id:5,
+name:"ELNAPO Hoodie",
+category:"merch",
+price:3200,
+image:"assets/img/store/hoodie.jpg",
+description:"Тепле худі з фірмовою символікою ELNAPO.",
+specs:["Щільна тканина","Капюшон","S–XXL","ELNAPO"]
+},
+
+{
+id:6,
+name:"ELNAPO Cap",
+category:"merch",
+price:900,
+image:"assets/img/store/cap.jpg",
+description:"Класична кепка ELNAPO.",
+specs:["Регульований розмір","Вишитий логотип","Чорний"]
+},
+
+{
+id:7,
+name:"ELNAPO Beanie",
+category:"merch",
+price:850,
+image:"assets/img/store/beanie.jpg",
+description:"Зимова шапка з логотипом ELNAPO.",
+specs:["Універсальний розмір","Тепла тканина"]
+},
+
+{
+id:8,
+name:"ELNAPO Wristband",
+category:"merch",
+price:450,
+image:"assets/img/store/wristband.jpg",
+description:"Фірмовий браслет ELNAPO.",
+specs:["Текстиль","Універсальний розмір"]
+},
+
+/* ELNAPO */
+
+{
+id:9,
+name:"Брелок ELNAPO",
+category:"elnapo",
+price:250,
+image:"assets/img/store/keychain.jpg",
+description:"Компактний брелок з логотипом ELNAPO.",
+specs:["3D-друк","Міцний пластик","Кілька кольорів"]
+},
+
+{
+id:10,
+name:"Підставка під навушники ELNAPO",
+category:"elnapo",
+price:650,
+image:"assets/img/store/headphone-stand.jpg",
+description:"Підставка для навушників з фірмовим логотипом ELNAPO.",
+specs:["3D-друк","Стійка конструкція","Можливий кастомний колір"]
+},
+
+{
+id:11,
+name:"Підставка під геймпад",
+category:"elnapo",
+price:550,
+image:"assets/img/store/controller-stand.jpg",
+description:"Компактна підставка для геймпада.",
+specs:["3D-друк","Підходить для більшості геймпадів"]
+},
+
+{
+id:12,
+name:"Підставка під телефон",
+category:"elnapo",
+price:400,
+image:"assets/img/store/phone-stand.jpg",
+description:"Настільна підставка для телефону.",
+specs:["3D-друк","Кілька кольорів","Компактний дизайн"]
+},
+
+{
+id:13,
+name:"Підставка під мишу",
+category:"elnapo",
+price:500,
+image:"assets/img/store/mouse-stand.jpg",
+description:"Міні-підставка для миші або аксесуарів.",
+specs:["3D-друк","ELNAPO дизайн"]
+},
+
+{
+id:14,
+name:"Тримач для кабелю",
+category:"elnapo",
+price:180,
+image:"assets/img/store/cable-holder.jpg",
+description:"Тримач кабелю для акуратного робочого столу.",
+specs:["3D-друк","Компактний","Кастомний колір"]
+},
+
+{
+id:15,
+name:"Органайзер для кабелів",
+category:"elnapo",
+price:350,
+image:"assets/img/store/cable-organizer.jpg",
+description:"Органайзер для декількох кабелів.",
+specs:["3D-друк","До 6 кабелів"]
+},
+
+{
+id:16,
+name:"Тримач USB-флешок",
+category:"elnapo",
+price:300,
+image:"assets/img/store/usb-holder.jpg",
+description:"Настільний тримач для USB-накопичувачів.",
+specs:["3D-друк","До 5 USB"]
+},
+
+{
+id:17,
+name:"Підставка під кружку",
+category:"elnapo",
+price:220,
+image:"assets/img/store/cup-holder.jpg",
+description:"Підставка під кружку з фірмовим дизайном.",
+specs:["3D-друк","Вологостійкий матеріал"]
+},
+
+{
+id:18,
+name:"Тримач для пульта",
+category:"elnapo",
+price:300,
+image:"assets/img/store/remote-holder.jpg",
+description:"Тримач для пульта керування.",
+specs:["3D-друк","Настільний"]
+},
+
+{
+id:19,
+name:"Тримач для контролера",
+category:"elnapo",
+price:500,
+image:"assets/img/store/game-controller-holder.jpg",
+description:"Зручний тримач для контролера.",
+specs:["3D-друк","Посилена конструкція"]
+},
+
+{
+id:20,
+name:"Кріплення для навушників під стіл",
+category:"elnapo",
+price:420,
+image:"assets/img/store/underdesk-headphone.jpg",
+description:"Кріплення під стіл для навушників.",
+specs:["3D-друк","Монтаж під столом"]
+},
+
+{
+id:21,
+name:"Органайзер робочого столу",
+category:"elnapo",
+price:750,
+image:"assets/img/store/desk-organizer.jpg",
+description:"Комплексний органайзер для робочого столу.",
+specs:["3D-друк","Секції для аксесуарів"]
+},
+
+{
+id:22,
+name:"Міні-урна для столу",
+category:"elnapo",
+price:450,
+image:"assets/img/store/mini-bin.jpg",
+description:"Мініатюрна урна для дрібного сміття на робочому столі.",
+specs:["3D-друк","Компактний розмір"]
+},
+
+/* PHONE */
+
+{
+id:23,
+name:"Чохол ELNAPO",
+category:"phone",
+price:650,
+image:"assets/img/store/phone-case.jpg",
+description:"Захисний чохол зі стилізованою символікою ELNAPO.",
+specs:["Захист корпусу","Кілька моделей телефонів"]
+},
+
+{
+id:24,
+name:"Попсокет ELNAPO",
+category:"phone",
+price:250,
+image:"assets/img/store/popsocket.jpg",
+description:"Попсокет з логотипом ELNAPO.",
+specs:["Клейка основа","Компактний"]
+},
+
+{
+id:25,
+name:"MagSafe тримач",
+category:"phone",
+price:550,
+image:"assets/img/store/magsafe.jpg",
+description:"Магнітний тримач для смартфона.",
+specs:["MagSafe","Магнітна фіксація"]
+},
+
+{
+id:26,
+name:"Кабель USB-C ELNAPO",
+category:"phone",
+price:350,
+image:"assets/img/store/usb-c.jpg",
+description:"Зарядний кабель USB-C.",
+specs:["USB-C","Посилена оплітка"]
+},
+
+{
+id:27,
+name:"Настільний тримач смартфона",
+category:"phone",
+price:450,
+image:"assets/img/store/desk-phone.jpg",
+description:"Підставка для смартфона для робочого столу.",
+specs:["3D-друк","Регульований кут"]
+},
+
+/* PC */
+
+{
+id:28,
+name:"Тримач навушників",
+category:"pc",
+price:600,
+image:"assets/img/store/headphone-holder.jpg",
+description:"Настільний тримач для навушників.",
+specs:["3D-друк","Стійка база"]
+},
+
+{
+id:29,
+name:"Підставка під клавіатуру",
+category:"pc",
+price:700,
+image:"assets/img/store/keyboard-stand.jpg",
+description:"Підставка для механічної клавіатури.",
+specs:["3D-друк","Антиковзання"]
+},
+
+{
+id:30,
+name:"Підставка під мишу",
+category:"pc",
+price:350,
+image:"assets/img/store/mouse-base.jpg",
+description:"Компактна підставка для миші.",
+specs:["3D-друк"]
+},
+
+{
+id:31,
+name:"Тримач геймпада",
+category:"pc",
+price:500,
+image:"assets/img/store/controller.jpg",
+description:"Настільний тримач геймпада.",
+specs:["3D-друк","Посилена база"]
+},
+
+{
+id:32,
+name:"Тримач монітора",
+category:"pc",
+price:900,
+image:"assets/img/store/monitor-holder.jpg",
+description:"Організаційний тримач для аксесуарів біля монітора.",
+specs:["3D-друк","Кастомний дизайн"]
+},
+
+{
+id:33,
+name:"Підставка під вебкамеру",
+category:"pc",
+price:450,
+image:"assets/img/store/webcam-stand.jpg",
+description:"Компактна підставка під вебкамеру.",
+specs:["3D-друк","Регульована"]
+},
+
+{
+id:34,
+name:"Тримач мікрофона",
+category:"pc",
+price:650,
+image:"assets/img/store/mic-holder.jpg",
+description:"Настільний тримач для мікрофона.",
+specs:["3D-друк","Стійка конструкція"]
+},
+
+/* DESK */
+
+{
+id:35,
+name:"ELNAPO Desk Mat",
+category:"desk",
+price:850,
+image:"assets/img/store/deskmat.jpg",
+description:"Великий килимок для робочого столу.",
+specs:["XXL формат","Тканинна поверхня","Гумова основа"]
+},
+
+{
+id:36,
+name:"Підставка під кружку Gold",
+category:"desk",
+price:300,
+image:"assets/img/store/gold-cup.jpg",
+description:"Стильна підставка під кружку.",
+specs:["3D-друк","Кастомні кольори"]
+},
+
+{
+id:37,
+name:"Desk Organizer Mini",
+category:"desk",
+price:450,
+image:"assets/img/store/organizer-mini.jpg",
+description:"Міні-органайзер для столу.",
+specs:["3D-друк","Кілька секцій"]
+},
+
+{
+id:38,
+name:"Підставка під телефон Gold",
+category:"desk",
+price:500,
+image:"assets/img/store/gold-phone.jpg",
+description:"Підставка для телефону у фірмовому стилі.",
+specs:["3D-друк","Gold edition"]
+},
+
+{
+id:39,
+name:"Тримач ручок",
+category:"desk",
+price:300,
+image:"assets/img/store/pen-holder.jpg",
+description:"Настільний тримач для ручок.",
+specs:["3D-друк","Кілька кольорів"]
+},
+
+{
+id:40,
+name:"Настільна полиця",
+category:"desk",
+price:850,
+image:"assets/img/store/desk-shelf.jpg",
+description:"Міні-полиця для аксесуарів.",
+specs:["3D-друк","Модульна"]
+},
+
+/* 3D */
+
+{
+id:41,
+name:"3D Фігурка ELNAPO",
+category:"3d",
+price:700,
+image:"assets/img/store/figure.jpg",
+description:"Фірмова 3D-фігурка ELNAPO.",
+specs:["3D-друк","Кастомні кольори"]
+},
+
+{
+id:42,
+name:"3D Логотип ELNAPO",
+category:"3d",
+price:600,
+image:"assets/img/store/logo-3d.jpg",
+description:"Об'ємний логотип ELNAPO.",
+specs:["3D-друк","Настільний декор"]
+},
+
+{
+id:43,
+name:"3D Букви ELNAPO",
+category:"3d",
+price:500,
+image:"assets/img/store/letters.jpg",
+description:"Настільні 3D-букви ELNAPO.",
+specs:["3D-друк","Кілька кольорів"]
+},
+
+{
+id:44,
+name:"3D Gamer Tag",
+category:"3d",
+price:650,
+image:"assets/img/store/gamertag.jpg",
+description:"Ваш власний нікнейм у форматі 3D.",
+specs:["Кастомний текст","3D-друк","Колір на вибір"]
+},
+
+{
+id:45,
+name:"3D Logo Holder",
+category:"3d",
+price:450,
+image:"assets/img/store/logo-holder.jpg",
+description:"Підставка для логотипу або емблеми.",
+specs:["3D-друк","Кастомний дизайн"]
+},
+
+{
+id:46,
+name:"3D Mini Trophy",
+category:"3d",
+price:900,
+image:"assets/img/store/trophy.jpg",
+description:"Мініатюрний кастомний кубок.",
+specs:["3D-друк","Кастомний напис"]
+},
+
+/* ACCESSORIES */
+
+{
+id:47,
+name:"ELNAPO Keychain Gold",
+category:"accessories",
+price:300,
+image:"assets/img/store/key-gold.jpg",
+description:"Преміальний брелок ELNAPO.",
+specs:["Метал","Gold"]
+},
+
+{
+id:48,
+name:"ELNAPO Sticker Pack",
+category:"accessories",
+price:180,
+image:"assets/img/store/stickers.jpg",
+description:"Набір фірмових стікерів.",
+specs:["10+ стікерів","Матова поверхня"]
+},
+
+{
+id:49,
+name:"ELNAPO Mouse Bungee",
+category:"accessories",
+price:750,
+image:"assets/img/store/bungee.jpg",
+description:"Організатор кабелю миші.",
+specs:["3D-друк","Антиковзання"]
+},
+
+{
+id:50,
+name:"Кабельний кліп Gold",
+category:"accessories",
+price:150,
+image:"assets/img/store/gold-clip.jpg",
+description:"Мініатюрний кліп для кабелю.",
+specs:["3D-друк","Кілька кольорів"]
+},
+
+{
+id:51,
+name:"ELNAPO Lanyard",
+category:"accessories",
+price:350,
+image:"assets/img/store/lanyard.jpg",
+description:"Фірмовий ланьярд.",
+specs:["Текстиль","ELNAPO"]
+},
+
+{
+id:52,
+name:"ELNAPO Card Holder",
+category:"accessories",
+price:300,
+image:"assets/img/store/card-holder.jpg",
+description:"Компактний тримач карток.",
+specs:["3D-друк","Кастомні кольори"]
+},
+
+{
+id:53,
+name:"ELNAPO Cable Box",
+category:"accessories",
+price:650,
+image:"assets/img/store/cable-box.jpg",
+description:"Короб для приховування кабелів.",
+specs:["3D-друк","Настільний"]
+},
+
+{
+id:54,
+name:"ELNAPO USB Holder XL",
+category:"accessories",
+price:400,
+image:"assets/img/store/usb-xl.jpg",
+description:"Розширений тримач USB.",
+specs:["3D-друк","До 10 USB"]
+},
+
+{
+id:55,
+name:"ELNAPO Controller Dock",
+category:"accessories",
+price:700,
+image:"assets/img/store/controller-dock.jpg",
+description:"Док-станція для контролера.",
+specs:["3D-друк","Стійка конструкція"]
+},
+
+{
+id:56,
+name:"ELNAPO Headset Dock",
+category:"accessories",
+price:800,
+image:"assets/img/store/headset-dock.jpg",
+description:"Преміальна док-станція для навушників.",
+specs:["3D-друк","Кастомні кольори"]
+},
+
+{
+id:57,
+name:"ELNAPO Desk Tray",
+category:"accessories",
+price:500,
+image:"assets/img/store/tray.jpg",
+description:"Лоток для дрібних речей.",
+specs:["3D-друк","Настільний"]
+},
+
+{
+id:58,
+name:"ELNAPO Coin Holder",
+category:"accessories",
+price:280,
+image:"assets/img/store/coin-holder.jpg",
+description:"Міні-тримач для монет та дрібниць.",
+specs:["3D-друк"]
+},
+
+{
+id:59,
+name:"ELNAPO Cable Tower",
+category:"accessories",
+price:550,
+image:"assets/img/store/cable-tower.jpg",
+description:"Вертикальний органайзер кабелів.",
+specs:["3D-друк","До 8 кабелів"]
+},
+
+{
+id:60,
+name:"ELNAPO Setup Pack",
+category:"accessories",
+price:1800,
+image:"assets/img/store/setup-pack.jpg",
+description:"Комплект аксесуарів для робочого столу ELNAPO.",
+specs:["Кабельний органайзер","Тримач телефону","Підставка","ELNAPO дизайн"]
+}
+
+];
+
+
+/* =========================================
+   STATE
+========================================= */
+
+let currentCategory = "all";
 let currentProduct = null;
+let currentRating = 5;
+
+let cart = JSON.parse(localStorage.getItem("elnapoCart")) || [];
 
 
-function addToCart(button) {
+/* =========================================
+   REVIEWS
+========================================= */
 
-    const card = button.closest(".product-card");
+let productReviews =
+    JSON.parse(localStorage.getItem("elnapoProductReviews")) || {};
 
-    const name = card.dataset.name;
-    const price = Number(card.dataset.price);
-    const image = card.querySelector("img").src;
+let shopReviews =
+    JSON.parse(localStorage.getItem("elnapoShopReviews")) || [];
 
-    const existing = cart.find(item => item.name === name);
 
-    if (existing) {
+/* =========================================
+   CATEGORY
+========================================= */
 
-        existing.quantity++;
+document.querySelectorAll(".category").forEach(button => {
 
-    } else {
+    button.addEventListener("click", () => {
 
-        cart.push({
-            name: name,
-            price: price,
-            image: image,
-            quantity: 1
-        });
+        document.querySelectorAll(".category")
+            .forEach(b => b.classList.remove("active"));
 
+        button.classList.add("active");
+
+        currentCategory = button.dataset.category;
+
+        renderProducts();
+
+    });
+
+});
+
+
+/* =========================================
+   RATING
+========================================= */
+
+function getProductRating(id){
+
+    const reviews = productReviews[id] || [];
+
+    if(!reviews.length){
+        return 0;
     }
 
-    updateCart();
-
-    button.classList.add("added");
-
-    button.innerHTML = "✓";
-
-    setTimeout(() => {
-
-        button.classList.remove("added");
-        button.innerHTML = "+";
-
-    }, 1000);
+    return reviews.reduce((sum,r) => sum + r.rating,0) / reviews.length;
 
 }
 
 
-function updateCart() {
+function getStars(rating){
 
-    const count = cart.reduce(
-        (sum, item) => sum + item.quantity,
-        0
+    if(!rating){
+        return "☆☆☆☆☆";
+    }
+
+    const rounded = Math.round(rating);
+
+    return "★".repeat(rounded) + "☆".repeat(5-rounded);
+
+}
+
+
+/* =========================================
+   PRODUCTS
+========================================= */
+
+function renderProducts(){
+
+    const grid = document.getElementById("productsGrid");
+
+    const search =
+        document.getElementById("searchInput")
+        .value
+        .toLowerCase();
+
+    const sort =
+        document.getElementById("sortSelect")
+        .value;
+
+
+    let list = products.filter(product => {
+
+        const categoryMatch =
+            currentCategory === "all" ||
+            product.category === currentCategory;
+
+        const searchMatch =
+            product.name.toLowerCase().includes(search) ||
+            product.description.toLowerCase().includes(search);
+
+        return categoryMatch && searchMatch;
+
+    });
+
+
+    if(sort === "cheap"){
+        list.sort((a,b) => a.price-b.price);
+    }
+
+    if(sort === "expensive"){
+        list.sort((a,b) => b.price-a.price);
+    }
+
+    if(sort === "rating"){
+        list.sort((a,b) =>
+            getProductRating(b.id)-getProductRating(a.id)
+        );
+    }
+
+
+    grid.innerHTML = list.map(product => {
+
+        const rating = getProductRating(product.id);
+
+        const reviews =
+            productReviews[product.id]?.length || 0;
+
+        return `
+
+        <article class="product-card">
+
+            <div
+                class="product-image"
+                onclick="openProduct(${product.id})"
+            >
+
+                <img
+                    src="${product.image}"
+                    alt="${product.name}"
+                    onerror="this.src='assets/img/store/placeholder.jpg'"
+                >
+
+                <span class="quick-view">
+                    Детальніше
+                </span>
+
+            </div>
+
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    ${getCategoryName(product.category)}
+                </span>
+
+                <h3>${product.name}</h3>
+
+                <div class="product-rating">
+
+                    <span>
+                        ${getStars(rating)}
+                    </span>
+
+                    <small>
+                        ${rating ? rating.toFixed(1) : "Новинка"}
+                        ${reviews ? `(${reviews})` : ""}
+                    </small>
+
+                </div>
+
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ${product.price.toLocaleString("uk-UA")} ₴
+                    </strong>
+
+                    <button
+                        onclick="addToCart(${product.id})"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        `;
+
+    }).join("");
+
+}
+
+
+function getCategoryName(category){
+
+    const names = {
+
+        merch:"Мерч",
+        elnapo:"ELNAPO",
+        phone:"Для телефону",
+        pc:"Для ПК",
+        desk:"Для столу",
+        "3d":"3D-друк",
+        accessories:"Аксесуари"
+
+    };
+
+    return names[category] || "ELNAPO";
+
+}
+
+
+/* =========================================
+   PRODUCT MODAL
+========================================= */
+
+function openProduct(id){
+
+    const product =
+        products.find(p => p.id === id);
+
+    if(!product) return;
+
+    currentProduct = product;
+
+    const reviews =
+        productReviews[id] || [];
+
+    const rating =
+        getProductRating(id);
+
+
+    document.getElementById("modalImage").src =
+        product.image;
+
+    document.getElementById("modalTitle").textContent =
+        product.name;
+
+    document.getElementById("modalCategory").textContent =
+        getCategoryName(product.category);
+
+    document.getElementById("modalPrice").textContent =
+        product.price.toLocaleString("uk-UA") + " ₴";
+
+    document.getElementById("modalDescription").textContent =
+        product.description;
+
+    document.getElementById("modalStars").textContent =
+        getStars(rating);
+
+    document.getElementById("modalRatingValue").textContent =
+        rating ? rating.toFixed(1) : "Поки немає оцінок";
+
+    document.getElementById("modalReviewsCount").textContent =
+        reviews.length
+        ? `· ${reviews.length} відгуків`
+        : "";
+
+
+    document.getElementById("modalSpecs").innerHTML =
+        product.specs.map(spec =>
+            `<div>✓ ${spec}</div>`
+        ).join("");
+
+
+    document.getElementById("modalAddButton")
+        .onclick = () => {
+
+            addToCart(product.id);
+            closeProduct();
+
+        };
+
+
+    renderModalReviews();
+
+    document.getElementById("productModal")
+        .classList.add("open");
+
+}
+
+
+function closeProduct(){
+
+    document.getElementById("productModal")
+        .classList.remove("open");
+
+}
+
+
+/* =========================================
+   PRODUCT REVIEWS
+========================================= */
+
+function renderModalReviews(){
+
+    const container =
+        document.getElementById("modalReviews");
+
+    const reviews =
+        productReviews[currentProduct.id] || [];
+
+
+    if(!reviews.length){
+
+        container.innerHTML = `
+            <div class="no-reviews">
+                Поки що немає відгуків.
+                Будьте першим!
+            </div>
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        reviews.slice().reverse().map(review => `
+
+        <div class="review">
+
+            <div class="review-top">
+
+                <strong>${escapeHTML(review.name)}</strong>
+
+                <span>
+                    ${getStars(review.rating)}
+                </span>
+
+            </div>
+
+            <p>
+                ${escapeHTML(review.text)}
+            </p>
+
+            <small>
+                ${review.date}
+            </small>
+
+        </div>
+
+    `).join("");
+
+}
+
+
+/* =========================================
+   REVIEW MODAL
+========================================= */
+
+function openProductReview(){
+
+    if(!currentProduct) return;
+
+    document.getElementById("reviewTitle")
+        .textContent =
+        `Відгук про ${currentProduct.name}`;
+
+    document.getElementById("reviewModal")
+        .classList.add("open");
+
+}
+
+
+function openShopReview(){
+
+    currentProduct = null;
+
+    document.getElementById("reviewTitle")
+        .textContent =
+        "Відгук про ELNAPO Store";
+
+    document.getElementById("reviewModal")
+        .classList.add("open");
+
+}
+
+
+function closeReview(){
+
+    document.getElementById("reviewModal")
+        .classList.remove("open");
+
+}
+
+
+document.querySelectorAll("#ratingStars button")
+    .forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            currentRating =
+                Number(button.dataset.rating);
+
+            document
+                .querySelectorAll("#ratingStars button")
+                .forEach(btn => {
+
+                    btn.classList.toggle(
+                        "selected",
+                        Number(btn.dataset.rating)
+                        <= currentRating
+                    );
+
+                });
+
+        });
+
+    });
+
+
+document.getElementById("reviewForm")
+    .addEventListener("submit", e => {
+
+        e.preventDefault();
+
+        const review = {
+
+            name:
+                document.getElementById("reviewName").value,
+
+            rating:
+                currentRating,
+
+            text:
+                document.getElementById("reviewText").value,
+
+            date:
+                new Date().toLocaleDateString("uk-UA")
+
+        };
+
+
+        if(currentProduct){
+
+            if(!productReviews[currentProduct.id]){
+                productReviews[currentProduct.id] = [];
+            }
+
+            productReviews[currentProduct.id].push(review);
+
+            localStorage.setItem(
+                "elnapoProductReviews",
+                JSON.stringify(productReviews)
+            );
+
+        }else{
+
+            shopReviews.push(review);
+
+            localStorage.setItem(
+                "elnapoShopReviews",
+                JSON.stringify(shopReviews)
+            );
+
+        }
+
+
+        document.getElementById("reviewForm").reset();
+
+        currentRating = 5;
+
+        document
+            .querySelectorAll("#ratingStars button")
+            .forEach(btn =>
+                btn.classList.remove("selected")
+            );
+
+        closeReview();
+
+        renderProducts();
+
+        if(currentProduct){
+            renderModalReviews();
+        }
+
+        renderShopReviews();
+
+    });
+
+
+/* =========================================
+   SHOP REVIEWS
+========================================= */
+
+function renderShopReviews(){
+
+    const container =
+        document.getElementById("shopReviews");
+
+
+    if(!shopReviews.length){
+
+        container.innerHTML = `
+            <div class="no-reviews">
+                Поки що немає відгуків про магазин.
+            </div>
+        `;
+
+        document.getElementById("shopRating")
+            .textContent = "5.0";
+
+        document.getElementById("shopReviewsCount")
+            .textContent = "0 відгуків";
+
+        return;
+
+    }
+
+
+    const average =
+        shopReviews.reduce(
+            (sum,r) => sum+r.rating,
+            0
+        ) / shopReviews.length;
+
+
+    document.getElementById("shopRating")
+        .textContent = average.toFixed(1);
+
+    document.getElementById("shopStars")
+        .textContent = getStars(average);
+
+    document.getElementById("shopReviewsCount")
+        .textContent =
+        `${shopReviews.length} відгуків`;
+
+
+    container.innerHTML =
+        shopReviews.slice().reverse().map(review => `
+
+        <div class="review shop-review">
+
+            <div class="review-top">
+
+                <strong>
+                    ${escapeHTML(review.name)}
+                </strong>
+
+                <span>
+                    ${getStars(review.rating)}
+                </span>
+
+            </div>
+
+            <p>
+                ${escapeHTML(review.text)}
+            </p>
+
+            <small>
+                ${review.date}
+            </small>
+
+        </div>
+
+    `).join("");
+
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+function addToCart(id){
+
+    const existing =
+        cart.find(item => item.id === id);
+
+
+    if(existing){
+
+        existing.quantity++;
+
+    }else{
+
+        cart.push({
+            id:id,
+            quantity:1
+        });
+
+    }
+
+
+    saveCart();
+
+    updateCartCount();
+
+}
+
+
+function saveCart(){
+
+    localStorage.setItem(
+        "elnapoCart",
+        JSON.stringify(cart)
     );
 
-    document.getElementById("cartCount").textContent = count;
+}
 
+
+function updateCartCount(){
+
+    const count =
+        cart.reduce(
+            (sum,item) =>
+            sum + item.quantity,
+            0
+        );
+
+    document.getElementById("cartCount")
+        .textContent = count;
+
+}
+
+
+function openCart(){
+
+    renderCart();
+
+    document.getElementById("cartModal")
+        .classList.add("open");
+
+}
+
+
+function closeCart(){
+
+    document.getElementById("cartModal")
+        .classList.remove("open");
+
+}
+
+
+function renderCart(){
 
     const container =
         document.getElementById("cartItems");
 
 
-    if (cart.length === 0) {
+    if(!cart.length){
 
         container.innerHTML = `
             <div class="empty-cart">
-                Кошик поки що порожній
+                Ваш кошик порожній.
             </div>
         `;
 
-    } else {
+        document.getElementById("cartTotal")
+            .textContent = "0 ₴";
 
-        container.innerHTML = cart.map((item, index) => `
+        return;
+
+    }
+
+
+    let total = 0;
+
+
+    container.innerHTML =
+        cart.map(item => {
+
+            const product =
+                products.find(p => p.id === item.id);
+
+            if(!product) return "";
+
+            const itemTotal =
+                product.price * item.quantity;
+
+            total += itemTotal;
+
+
+            return `
 
             <div class="cart-item">
 
-                <img src="${item.image}" alt="">
+                <img src="${product.image}" alt="">
 
                 <div class="cart-item-info">
 
                     <strong>
-                        ${item.name}
+                        ${product.name}
                     </strong>
 
                     <span>
-                        ${item.price} ₴
+                        ${product.price.toLocaleString("uk-UA")} ₴
                     </span>
 
                     <div class="quantity">
 
-                        <button onclick="changeQuantity(${index}, -1)">
+                        <button
+                            onclick="changeQuantity(${product.id},-1)"
+                        >
                             −
                         </button>
 
@@ -1343,7 +1890,9 @@ function updateCart() {
                             ${item.quantity}
                         </span>
 
-                        <button onclick="changeQuantity(${index}, 1)">
+                        <button
+                            onclick="changeQuantity(${product.id},1)"
+                        >
                             +
                         </button>
 
@@ -1353,340 +1902,205 @@ function updateCart() {
 
                 <button
                     class="remove-item"
-                    onclick="removeFromCart(${index})"
+                    onclick="removeFromCart(${product.id})"
                 >
                     ×
                 </button>
 
             </div>
 
-        `).join("");
+            `;
+
+        }).join("");
+
+
+    document.getElementById("cartTotal")
+        .textContent =
+        total.toLocaleString("uk-UA") + " ₴";
+
+}
+
+
+function changeQuantity(id, amount){
+
+    const item =
+        cart.find(item => item.id === id);
+
+    if(!item) return;
+
+    item.quantity += amount;
+
+    if(item.quantity <= 0){
+
+        cart =
+            cart.filter(item => item.id !== id);
 
     }
 
+    saveCart();
 
-    const total = cart.reduce(
-        (sum, item) =>
-            sum + item.price * item.quantity,
-        0
-    );
+    updateCartCount();
 
-    document.getElementById("cartTotal").textContent =
-        total + " ₴";
+    renderCart();
 
 }
 
 
-function changeQuantity(index, amount) {
+function removeFromCart(id){
 
-    cart[index].quantity += amount;
+    cart =
+        cart.filter(item => item.id !== id);
 
-    if (cart[index].quantity <= 0) {
+    saveCart();
 
-        cart.splice(index, 1);
+    updateCartCount();
+
+    renderCart();
+
+}
+
+
+/* =========================================
+   ORDER
+========================================= */
+
+function openOrderForm(){
+
+    if(!cart.length){
+
+        alert("Ваш кошик порожній.");
+
+        return;
 
     }
 
-    updateCart();
+    closeCart();
 
-}
-
-
-function removeFromCart(index) {
-
-    cart.splice(index, 1);
-
-    updateCart();
-
-}
-
-
-function openCart() {
-
-    document
-        .getElementById("cartModal")
+    document.getElementById("orderModal")
         .classList.add("open");
 
 }
 
 
-function closeCart() {
+function closeOrder(){
 
-    document
-        .getElementById("cartModal")
+    document.getElementById("orderModal")
         .classList.remove("open");
 
 }
 
 
-/* ================= PRODUCT MODAL ================= */
+document.getElementById("orderForm")
+    .addEventListener("submit", e => {
 
-function openProduct(button) {
-
-    const card =
-        button.closest(".product-card");
-
-    currentProduct = {
-
-        name: card.dataset.name,
-
-        price: Number(card.dataset.price),
-
-        category:
-            card.querySelector(".product-category")
-                .textContent,
-
-        image:
-            card.querySelector("img").src
-
-    };
+        e.preventDefault();
 
 
-    document.getElementById("modalProductImage").src =
-        currentProduct.image;
+        const name =
+            document.getElementById("orderName").value;
 
-    document.getElementById("modalProductName").textContent =
-        currentProduct.name;
+        const telegram =
+            document.getElementById("orderTelegram").value;
 
-    document.getElementById("modalProductPrice").textContent =
-        currentProduct.price + " ₴";
+        const city =
+            document.getElementById("orderCity").value;
 
-    document.getElementById("modalProductCategory").textContent =
-        currentProduct.category;
-
-
-    document
-        .getElementById("productModal")
-        .classList.add("open");
-
-}
+        const post =
+            document.getElementById("orderPost").value;
 
 
-function closeProduct() {
-
-    document
-        .getElementById("productModal")
-        .classList.remove("open");
-
-}
+        let productsText = "";
 
 
-function addModalProduct() {
+        cart.forEach(item => {
 
-    if (!currentProduct) return;
+            const product =
+                products.find(p => p.id === item.id);
 
+            if(product){
 
-    const existing =
-        cart.find(
-            item =>
-                item.name === currentProduct.name
-        );
+                productsText +=
+                    `${product.name} × ${item.quantity}\n`;
 
-
-    if (existing) {
-
-        existing.quantity++;
-
-    } else {
-
-        cart.push({
-
-            name: currentProduct.name,
-
-            price: currentProduct.price,
-
-            image: currentProduct.image,
-
-            quantity: 1
+            }
 
         });
 
-    }
 
+        const message = encodeURIComponent(
 
-    updateCart();
+`Нове замовлення ELNAPO Store
 
-    closeProduct();
+Ім'я: ${name}
+Telegram: ${telegram}
+Місто: ${city}
+Нова пошта: ${post}
 
-    openCart();
+Товари:
+${productsText}
 
-}
+Коментар:
+${document.getElementById("orderComment").value}`
 
-
-/* ================= SEARCH / SORT ================= */
-
-function filterProducts() {
-
-    const search =
-        document
-            .getElementById("searchInput")
-            .value
-            .toLowerCase();
-
-    const sort =
-        document
-            .getElementById("sortSelect")
-            .value;
-
-    const activeCategory =
-        document
-            .querySelector(".category.active")
-            .dataset.category;
-
-
-    const grid =
-        document.getElementById("productsGrid");
-
-
-    let cards =
-        Array.from(
-            document.querySelectorAll(".product-card")
         );
 
 
-    cards.forEach(card => {
+        /*
+        ТУТ ПОТІМ ВСТАВИМО TELEGRAM
+        АБО FORMspree.
 
-        const name =
-            card.dataset.name.toLowerCase();
+        Поки показуємо готове замовлення.
+        */
 
-        const category =
-            card.dataset.category;
-
-
-        const searchMatch =
-            name.includes(search);
-
-        const categoryMatch =
-            activeCategory === "all" ||
-            category === activeCategory;
+        alert(
+            "Заявка сформована! Менеджер зв'яжеться з вами у Telegram."
+        );
 
 
-        if (searchMatch && categoryMatch) {
+        /*
+        Після підключення Telegram/Formspree
+        тут буде реальна відправка.
+        */
 
-            card.style.display = "";
 
-        } else {
+        cart = [];
 
-            card.style.display = "none";
+        saveCart();
 
-        }
+        updateCartCount();
+
+        closeOrder();
+
+        e.target.reset();
 
     });
 
 
-    const visible =
-        cards.filter(
-            card =>
-                card.style.display !== "none"
-        );
+/* =========================================
+   ESCAPE HTML
+========================================= */
 
+function escapeHTML(text){
 
-    if (sort === "cheap") {
-
-        visible.sort(
-            (a, b) =>
-                Number(a.dataset.price) -
-                Number(b.dataset.price)
-        );
-
-    }
-
-
-    if (sort === "expensive") {
-
-        visible.sort(
-            (a, b) =>
-                Number(b.dataset.price) -
-                Number(a.dataset.price)
-        );
-
-    }
-
-
-    if (sort === "name") {
-
-        visible.sort(
-            (a, b) =>
-                a.dataset.name.localeCompare(
-                    b.dataset.name,
-                    "uk"
-                )
-        );
-
-    }
-
-
-    visible.forEach(card =>
-        grid.appendChild(card)
-    );
-
-
-    document.getElementById("productsCount").textContent =
-        visible.length + " товарів";
+    return String(text)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
 
 }
 
 
-/* ================= CATEGORIES ================= */
+/* =========================================
+   INIT
+========================================= */
 
-document
-    .querySelectorAll(".category")
-    .forEach(button => {
+renderProducts();
 
-        button.addEventListener(
-            "click",
-            function() {
+renderShopReviews();
 
-                document
-                    .querySelectorAll(".category")
-                    .forEach(btn =>
-                        btn.classList.remove("active")
-                    );
-
-                this.classList.add("active");
-
-                filterProducts();
-
-            }
-        );
-
-    });
-
-
-/* ================= MOBILE ================= */
-
-function toggleMobileMenu() {
-
-    document
-        .getElementById("mobileMenu")
-        .classList.toggle("open");
-
-}
-
-
-/* ================= MODAL CLICK ================= */
-
-document
-    .querySelectorAll(".modal-overlay")
-    .forEach(modal => {
-
-        modal.addEventListener(
-            "click",
-            function(e) {
-
-                if (e.target === this) {
-
-                    this.classList.remove("open");
-
-                }
-
-            }
-        );
-
-    });
-
-
-updateCart();
+updateCartCount();
 
 </script>
 
