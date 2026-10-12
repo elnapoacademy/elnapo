@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+ <meta http-equiv="Content-Security-Policy"
+content="
+default-src 'self';
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+font-src 'self' https://fonts.gstatic.com;
+img-src 'self' data: https:;
+media-src 'self';
+script-src 'self';
+">
+
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+  <meta charset="UTF-8">
+  <title>potapkam | ELNAPO Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+<link rel="shortcut icon" href="favicon.png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<style>
+/* Fix player setup cards without changing the rest of the site */
+.player-setup-grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(min(100%, 220px), 1fr) );
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+.player-setup-grid *,
+.player-setup-grid *::before,
+.player-setup-grid *::after {
+  box-sizing: border-box;
+  min-width: 0;
+}
+.player-setup-grid .setup-item {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 10px;
+  padding: 26px 18px;
+}
+.player-setup-grid .setup-item span {
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+}
+.player-setup-grid .setup-item strong {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.35;
+}
+.player-setup-grid .setup-item.copy {
+  cursor: pointer;
+  user-select: none;
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.player-setup-grid .setup-item.copy:hover {
+  border-color: #d7b32f;
+  box-shadow: 0 0 18px rgba(215, 179, 47, .10);
+}
+.player-setup-grid .setup-item.copy:focus-visible {
+  outline: 2px solid #d7b32f;
+  outline-offset: 3px;
+}
+.player-setup-grid .setup-item.copy.copied {
+  border-color: #27ae60;
+  box-shadow: 0 0 18px rgba(39, 174, 96, .16);
+}
+.player-setup-grid .setup-item.copy .copy-hint {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 400;
+}
+@media (max-width: 700px) {
+  .player-setup-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .player-setup-grid .setup-item {
+    padding: 20px 12px;
+  }
+}
+@media (max-width: 420px) {
+  .player-setup-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header class="header">
+  <div class="nav-container">
+    <div class="logo">ELNAPO</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="team.html">Склад команди</a>
+    </nav>
+  </div>
+</header>
+
+<section class="player-page">
+
+  <!-- MAIN CARD -->
+  <div class="player-card-big">
+
+    <img src="assets/img/players/player5.jpg" alt="Player">
+
+    <div class="player-main-info">
+      <h1>Дмитро Шушунов</h1>
+      <h2>potapkam</h2>
+
+      <div class="player-meta">
+        <span>Роль: AWP</span>
+        <span>ELO: 3338</span>
+      </div>
+
+      <p class="player-bio">
+        18y.o
+      </p>
+
+      <div class="player-socials">
+        <a href="https://www.faceit.com/en/players/ekaterina" target="_blank" class="social faceit">FACEIT</a>
+        <a href="https://www.hltv.org/potapkam" target="_blank" class="social hltv">HLTV</a>
+        <a href="https://www.instagram.com/shushunovvv" target="_blank" class="social instagram">INSTAGRAM</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SETUP -->
+  <div class="player-setup-grid">
+
+    <div class="setup-item"><span>DPI</span><strong>1600</strong></div>
+    <div class="setup-item"><span>Sens</span><strong>0.38</strong></div>
+
+    <div class="setup-item copy" id="crosshair">
+      <span>Код прицілу</span>
+      <strong>CSRGeW2MEAaesrVAGGGtxJRJpXt2LOHz5C7BSzwczZh6pG</strong>
+    </div>
+
+    <div class="setup-item"><span>Мишка</span><strong>HTS Ultra 8K Wireless Gaming mouse</strong></div>
+    <div class="setup-item"><span>Клавіатура</span><strong>Cidoo qk61 v2</strong></div>
+    <div class="setup-item"><span>Навушники</span><strong>Logitech 733</strong></div>
+    <div class="setup-item"><span>Монітор</span><strong>Illama g-master 240hz ips</strong></div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  © ELNAPO ACADEMY
+</footer>
+
+
+<script>
+(() => {
+  const card = document.getElementById('crosshair');
+  const codeElement = document.getElementById('crosshair-code');
+  const hint = document.getElementById('crosshair-hint');
+  if (!card || !codeElement || !hint) return;
+
+  const code = codeElement.textContent.trim();
+  let resetTimer;
+
+  async function copyCrosshair() {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(code);
+      } else {
+        // Fallback for browsers where Clipboard API is unavailable.
+        const field = document.createElement('textarea');
+        field.value = code;
+        field.setAttribute('readonly', '');
+        field.style.position = 'fixed';
+        field.style.left = '-9999px';
+        field.style.top = '0';
+        document.body.appendChild(field);
+        field.select();
+        field.setSelectionRange(0, field.value.length);
+        const copied = document.execCommand('copy');
+        field.remove();
+        if (!copied) throw new Error('Copy command failed');
+      }
+
+      card.classList.add('copied');
+      hint.textContent = 'Скопійовано!';
+    } catch (error) {
+      hint.textContent = 'Не вдалося скопіювати — виділи код вручну';
+      console.error('Не вдалося скопіювати код прицілу:', error);
+    }
+
+    clearTimeout(resetTimer);
+    resetTimer = setTimeout(() => {
+      card.classList.remove('copied');
+      hint.textContent = 'Натисни, щоб скопіювати';
+    }, 1800);
+  }
+
+  card.addEventListener('click', copyCrosshair);
+  card.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      copyCrosshair();
+    }
+  });
+})();
+</script>
+
+
+</body>
+</html>
